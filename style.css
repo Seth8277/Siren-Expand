@@ -52,8 +52,8 @@ Tags: Siren-Expand（综合扩展版）,评论表情,新作品模板,后台配�
 	height:30px;
 	 border-radius: 50%;
     position: relative;
-    
-  
+
+
 }
 
 .searchbox,
@@ -132,7 +132,6 @@ body {
     margin: 0;
     font: 300 17px miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
-    cursor: url("images/Arrow.cur"),pointer;
 }
 
 input:-webkit-autofill {
@@ -180,7 +179,6 @@ template {
 a {
     background-color: transparent;
     text-decoration: none;
-    cursor: url('images/Hand.cur'),default;
 }
 
 a:active,
@@ -396,7 +394,7 @@ blockquote {
     background: #F9F9F9;
     position: relative;
 }
-	
+
 }
 
 blockquote:before {
@@ -694,20 +692,20 @@ a:active {
 }
 
 @keyframes fade-in {
-  
+
     0% {
         opacity: 0;
-    }/*初始状态 透明度为0*/  
+    }/*初始状态 透明度为0*/
     40% {
         opacity: 0;
-    }/*过渡状态 透明度为0*/  
+    }/*过渡状态 透明度为0*/
     100% {
         opacity: 1;
     }/*结束状态 透明度为1*/
 }
 
 @-webkit-keyframes fade-in {
-/*针对webkit内核*/  
+/*针对webkit内核*/
     0% {
         opacity: 0;
     }
@@ -758,7 +756,7 @@ a:active {
     animation: poi-face 10s linear infinite alternate;
 }
 
-#video-btn:hover,#video-add:hover {	
+#video-btn:hover,#video-add:hover {
     opacity: 1;
 }
 
@@ -918,7 +916,7 @@ a:active {
         height: 280px;
     }
 
-    .pattern-center h1.cat-title, 
+    .pattern-center h1.cat-title,
     .pattern-center h1.entry-title,
     .single-center .single-header h1.entry-title {
         font-size: 26px;
@@ -1570,7 +1568,7 @@ i.iconfont.hotpost {
 }
 
 @media (max-width:860px){
-	
+
 	.post-status {
     margin-bottom: 25px;
 }
@@ -1933,7 +1931,7 @@ h1.page-title.mb- {
 }
 
 /*.post-like a.done, .post-like a:hover {
-color: #FF4646; 
+color: #FF4646;
 }*/
 
 .post-like a.done {
@@ -2340,7 +2338,7 @@ h3#comments-list-title {
     padding: 12px 25px;
     z-index: 10000;
     margin-top: -4px;
-}   
+}
 
 /*--------------------------------------------------------------
 # Alignments
@@ -2475,7 +2473,7 @@ margin:0 15.6px
 .works-entry {
 float: left;
 margin-bottom: 8px;
-display: inline-block; 
+display: inline-block;
 }
 .works-main {
 width: 100%;
@@ -2904,7 +2902,7 @@ transition: height 0s ease-out; }
 .comnav {
 width: 69.076%;
 max-width: 860px;
-margin: 0 auto; 
+margin: 0 auto;
 font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
 }
 
@@ -3387,7 +3385,7 @@ animation: btn-pudding 1s linear;
     background: none;
 }
 
-.notification i, 
+.notification i,
 .comment-respond .logged-in-as i {
     margin-right: 10px;
     font-size: 16px;
@@ -4463,7 +4461,7 @@ object {
     transform: scale(0.9);
 }
 
-/* 
+/*
  * Loading 加载动画
  */
 #loading{
@@ -4484,8 +4482,8 @@ object {
 		width: 200px;
 		margin-top: -100px;
 		margin-left: -100px;
-		-ms-transform: rotate(-135deg); 
-	   	-webkit-transform: rotate(-135deg); 
+		-ms-transform: rotate(-135deg);
+	   	-webkit-transform: rotate(-135deg);
 	    transform: rotate(-135deg);
 	}
 	.loading-object{
@@ -4498,9 +4496,9 @@ object {
 		border-bottom: 5px solid transparent;
 		border-left:  5px solid #ffad33;
 		border-right: 5px solid transparent;
-		
+
 		-webkit-animation: animate 2s infinite;
-		animation: animate 2s infinite;	
+		animation: animate 2s infinite;
 
 		}
 	#object_one{
@@ -4509,7 +4507,7 @@ object {
 		width: 50px;
 		height: 50px;
 		}
-								
+
 	#object_two{
 		left: 65px;
 		top: 65px;
@@ -4518,7 +4516,7 @@ object {
 		-webkit-animation-delay: 0.2s;
 	    animation-delay: 0.2s;
 		}
-			
+
 	#object_three{
 		left: 55px;
 		top: 55px;
@@ -4534,37 +4532,37 @@ object {
 		height: 110px;
 		-webkit-animation-delay: 0.6s;
 	    animation-delay: 0.6s;
-		
-		}	
+
+		}
 
 	@-webkit-keyframes animate {
-	 
+
 
 	50% {
 
-		-ms-transform: rotate(360deg) scale(0.8); 
-	   	-webkit-transform: rotate(360deg) scale(0.8); 
-	    transform: rotate(360deg) scale(0.8); 
+		-ms-transform: rotate(360deg) scale(0.8);
+	   	-webkit-transform: rotate(360deg) scale(0.8);
+	    transform: rotate(360deg) scale(0.8);
 	  }
 	}
 
 	@keyframes animate {
-		
+
 	50% {
 
-		-ms-transform: rotate(360deg) scale(0.8); 
-	   	-webkit-transform: rotate(360deg) scale(0.8); 
-	    transform: rotate(360deg) scale(0.8); 
-	  }	
+		-ms-transform: rotate(360deg) scale(0.8);
+	   	-webkit-transform: rotate(360deg) scale(0.8);
+	    transform: rotate(360deg) scale(0.8);
+	  }
 	}
 
 
 
 /*
- * download 
+ * download
  * demo
- * 
- */ 
+ *
+ */
 
 .download , .demo {
     color: #fff !important;
@@ -4673,7 +4671,7 @@ i.iconfont.down , i.iconfont.demo {
 /*
 *
 * some mobile style
-* 
+*
 **/
 
 
@@ -5387,7 +5385,7 @@ i.iconfont.down , i.iconfont.demo {
 }
 
 
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -5397,14 +5395,14 @@ i.iconfont.down , i.iconfont.demo {
 #mo-nav::-webkit-scrollbar {
     width: 0px;
     opacity: 0;
-}  
+}
 
-/*定义滚动条轨道 内阴影+圆角*/  
+/*定义滚动条轨道 内阴影+圆角*/
 ::-webkit-scrollbar-track {
     background-color: #eee;
-}  
+}
 
-/*定义滑块 内阴影+圆角*/  
+/*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
     background-color: #69d2e7;
 }
@@ -6270,11 +6268,11 @@ i.iconfont.down , i.iconfont.demo {
 	color:#A4A4A4;
 	}
 
-	
+
 .changeletter #changelt {
 	width:100%;
 	margin: 5px 0 5px 0;
-	
+
 	}
 
 
