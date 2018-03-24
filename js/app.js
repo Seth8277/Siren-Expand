@@ -595,7 +595,7 @@ $(function() {
         }).on('pjax:send', function() {
             $('#loading').fadeIn(300);
             Siren.MNH();
-        }).on('pjax:complete', function() { 
+        }).on('pjax:complete', function() {
             Siren.AH();
             Siren.PE();
             Siren.CE();
@@ -619,6 +619,11 @@ $(function() {
                 $('.js-search').toggleClass('is-visible');
             } 
         });
+        window.addEventListener('popstate',function(e) {
+            Siren.AH();
+            Siren.PE();
+            Siren.CE();
+        },false);
     }
 
     // 点赞
@@ -646,7 +651,7 @@ $(function() {
         $(this).postLike();
     }); 
 
-    console.log("%c Mao %c","background:#9a9da2; color:#ffffff; border-radius:4px;","","http://blog.skillcat.me");
+
     console.log("%c Github %c","background:#9a9da2; color:#ffffff; border-radius:4px;","","https://github.com/skillcat921");
 
 });
