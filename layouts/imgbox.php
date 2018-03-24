@@ -55,7 +55,7 @@ $bg_style = akina_option('focus_height') ? 'background-position: center center;b
 		<?php } ?>	
 		<?php if (akina_option('googleplus')){ ?>
 		<li><a href="<?php echo akina_option('googleplus', ''); ?>" target="_blank" class="social-wangyiyun" title="Google+"><img src="<?php bloginfo('template_url'); ?>/images/sns/googleplus.png"/></a></li>
-		<?php } ?>			
+		<?php } ?>	
 	  	</div>		 
 	</div>
 	<?php } ?>
