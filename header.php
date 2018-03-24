@@ -107,16 +107,6 @@ if (akina_option('akina_meta') == true) {
 		}
 	</script>
  <?php }?>
-
-<!--统计-->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?8558b6dad158ecb44fbc887c1956c897";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
 </script>
 
 <script>
