@@ -11,7 +11,6 @@ var width,
 
 // Main
 initHeader();
-addListeners();
 
 function initHeader() {
     width = window.innerWidth;
