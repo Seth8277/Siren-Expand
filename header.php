@@ -119,8 +119,7 @@
     <?php } ?>
     </script>
 
-    <
-    script >
+    <script>
     function rbq() {
         var audio = document.createElement('audio');
         var body = document.body;
