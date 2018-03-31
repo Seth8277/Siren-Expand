@@ -48,11 +48,10 @@ Tags: Siren-Expand（综合扩展版）,评论表情,新作品模板,后台配�
 }
 
 .user-panel img {
-	width: 30px;
-	height:30px;
-	 border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     position: relative;
-
 
 }
 
@@ -130,7 +129,7 @@ html {
 
 body {
     margin: 0;
-    font: 300 17px miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font: 300 17px miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -369,7 +368,7 @@ h6 {
 }
 
 p {
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 dfn,
@@ -387,12 +386,12 @@ blockquote {
 }
 
 @media (max-width: 860px) {
-	blockquote {
-    margin: 0;
-    padding: 15px 15px;
-    background: #F9F9F9;
-    position: relative;
-}
+    blockquote {
+        margin: 0;
+        padding: 15px 15px;
+        background: #F9F9F9;
+        position: relative;
+    }
 
 }
 
@@ -403,7 +402,7 @@ blockquote:before {
     top: -50px;
     left: 12px;
     color: #ABABAB;
-    font-family: "SimHei",sans-serif;
+    font-family: "SimHei", sans-serif;
 }
 
 blockquote:after {
@@ -413,7 +412,7 @@ blockquote:after {
     top: -50px;
     right: -5px;
     color: #ABABAB;
-    font-family: "SimHei",sans-serif;
+    font-family: "SimHei", sans-serif;
 }
 
 blockquote p {
@@ -426,7 +425,7 @@ address {
 
 pre {
     background: #F8F8F8;
-    font: 15px/22px "microsoft jhenghei","Arial",Sans-Serif;
+    font: 15px/22px "microsoft jhenghei", "Arial", Sans-Serif;
     line-height: 1.6;
     margin-bottom: 1.6em;
     max-width: 100%;
@@ -470,18 +469,18 @@ html {
 
 * {
     box-sizing: border-box;
-/*outline: none;*/
+    /*outline: none;*/
 }
 
 *:before,
 *:after {
- /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
     box-sizing: inherit;
 }
 
 body {
     background: #fff;
- /* Fallback for when there is no custom background color defined. */
+    /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -532,9 +531,9 @@ dd {
 
 img {
     height: auto;
- /* Make sure images are scaled correctly. */
+    /* Make sure images are scaled correctly. */
     max-width: 100%;
- /* Adhere to container width. */
+    /* Adhere to container width. */
 }
 
 table {
@@ -559,7 +558,7 @@ input[type="submit"] {
     font-size: 0.75rem;
     line-height: 1;
     padding: .6em 1em .4em;
-/*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
 }
 
 button:hover,
@@ -656,9 +655,9 @@ textarea {
 a {
     color: royalblue;
     outline: none;
-    -webkit-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 a:visited {
@@ -687,24 +686,27 @@ a:active {
     display: block;
     margin: 0 auto;
     padding: 0 20px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 @keyframes fade-in {
 
     0% {
         opacity: 0;
-    }/*初始状态 透明度为0*/
+    }
+    /*初始状态 透明度为0*/
     40% {
         opacity: 0;
-    }/*过渡状态 透明度为0*/
+    }
+    /*过渡状态 透明度为0*/
     100% {
         opacity: 1;
-    }/*结束状态 透明度为1*/
+    }
+    /*结束状态 透明度为1*/
 }
 
 @-webkit-keyframes fade-in {
-/*针对webkit内核*/
+    /*针对webkit内核*/
     0% {
         opacity: 0;
     }
@@ -720,12 +722,13 @@ a:active {
 
 .wrapper {
     animation: fade-in;
-/*动画名称*/
+    /*动画名称*/
     animation-duration: 0.5s;
-/*动画持续时间*/
+    /*动画持续时间*/
     -webkit-animation: fade-in 0.5s;
-/*针对webkit内核*/
+    /*针对webkit内核*/
 }
+
 /*视频*/
 #bgvideo {
     position: absolute;
@@ -738,7 +741,7 @@ a:active {
     z-index: 0;
 }
 
-#video-btn,#video-add {
+#video-btn, #video-add {
     position: absolute;
     bottom: 130px;
     right: 5px;
@@ -755,7 +758,7 @@ a:active {
     animation: poi-face 10s linear infinite alternate;
 }
 
-#video-btn:hover,#video-add:hover {
+#video-btn:hover, #video-add:hover {
     opacity: 1;
 }
 
@@ -787,7 +790,7 @@ a:active {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0;
     font-size: 18px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     -webkit-transition: .4s ease all;
     -moz-transition: .4s ease all;
     -o-transition: .4s ease all;
@@ -855,7 +858,7 @@ a:active {
     margin: auto;
     padding: 0;
     border: 0;
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
 }
 
 .pattern-center .cat-des {
@@ -941,7 +944,7 @@ a:active {
     left: 0;
     top: 0;
     background: rgba(255, 255, 255, .98);
-    box-shadow: 0 0 1px rgba(0,0,0,.15)
+    box-shadow: 0 0 1px rgba(0, 0, 0, .15)
 }
 
 .gizle {
@@ -978,9 +981,9 @@ a:active {
     height: 40px;
     margin-top: 17px;
     opacity: .75;
-    -webkit-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 .site-title img:hover {
@@ -1004,6 +1007,7 @@ a:active {
 #mo-nav {
     display: none
 }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -1048,7 +1052,7 @@ a:active {
     padding: 10px 0;
     display: inline-block;
     color: #666;
-	text-shadow:#FFF 1px 1px 0.5px;
+    text-shadow: #FFF 1px 1px 0.5px;
 }
 
 .site-top ul li a:hover {
@@ -1158,8 +1162,6 @@ a:active {
     color: #545454;
 }
 
-
-
 /* Small menu. */
 
 /*--------------------------------------------------------------
@@ -1167,7 +1169,7 @@ a:active {
 --------------------------------------------------------------*/
 .site-main {
     padding: 40px 0 0;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .site-content {
@@ -1239,7 +1241,7 @@ a:active {
 
 .entry-title a {
     color: #504E4E;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .entry-title a:hover {
@@ -1253,7 +1255,7 @@ a:active {
     font-size: 12px;
     color: #989898;
     letter-spacing: 0;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 }
 
 .p-time i {
@@ -1270,8 +1272,8 @@ i.iconfont.hotpost {
     min-height: 60px;
     margin: 0 0 0 17%;
     font-size: 15px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
-    color: rgba(0,0,0,.66);
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
+    color: rgba(0, 0, 0, .66);
     letter-spacing: 0;
     line-height: 30px;
 }
@@ -1297,14 +1299,14 @@ i.iconfont.hotpost {
 
 .info-meta {
     margin-top: 10px;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
     position: absolute;
     top: 20px;
     opacity: 0;
     padding-top: 8px;
     border-top: 1px solid #ddd;
-    -webkit-transform: translate3d(-150px,0,0);
-    transform: translate3d(-150px,0,0);
+    -webkit-transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-150px, 0, 0);
     visibility: hidden;
     transition: .7s all ease;
     -webkit-transition: .6s all ease;
@@ -1329,13 +1331,13 @@ i.iconfont.hotpost {
     float: left;
 }
 
-.info-meta  a {
+.info-meta a {
     color: #B3B3B3
 }
 
-.post-list:hover  .info-meta {
-    -webkit-transform: translate3d(-230px,0,0);
-    transform: translate3d(-230px,0,0);
+.post-list:hover .info-meta {
+    -webkit-transform: translate3d(-230px, 0, 0);
+    transform: translate3d(-230px, 0, 0);
     opacity: 1;
     visibility: visible;
 }
@@ -1365,16 +1367,16 @@ i.iconfont.hotpost {
     position: relative;
     margin: 20px 0 80px;
     padding: 40px;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     background-color: #FFFFFF;
-	transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .post-list-thumb::before {
     content: '';
     width: 1px;
     height: 100px;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     position: absolute;
     left: 0;
     right: 0;
@@ -1384,7 +1386,7 @@ i.iconfont.hotpost {
 }
 
 .post-list-thumb:hover {
-	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .post-list-thumb i {
@@ -1447,7 +1449,7 @@ i.iconfont.hotpost {
     padding: 0;
     z-index: 500;
     background: #fff;
-    color: rgba(0,0,0,.66);
+    color: rgba(0, 0, 0, .66);
 }
 
 .float-content .post-text {
@@ -1545,7 +1547,7 @@ i.iconfont.hotpost {
     text-align: right;
     margin-bottom: 10px;
     margin-top: -15px;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 }
 
 .s-content {
@@ -1566,12 +1568,13 @@ i.iconfont.hotpost {
     margin-bottom: 80px;
 }
 
-@media (max-width:860px){
+@media (max-width: 860px) {
 
-	.post-status {
-    margin-bottom: 25px;
+    .post-status {
+        margin-bottom: 25px;
+    }
 }
-	}
+
 /*--------------------------------------------------------------
 # pagenav
 --------------------------------------------------------------*/
@@ -1619,7 +1622,7 @@ i.iconfont.hotpost {
     text-align: center;
     font-size: 13px;
     color: #B9B9B9;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .site-info a {
@@ -1630,8 +1633,8 @@ i.iconfont.hotpost {
     color: #A0DAD0;
 }
 
-.footertext{
-	margin-bottom: 4px;
+.footertext {
+    margin-bottom: 4px;
 }
 
 .footertext p {
@@ -1651,8 +1654,8 @@ i.iconfont.hotpost {
 }
 
 .footer-device {
-	/*text-transform: uppercase;*/
-	margin: .4em 0;
+    /*text-transform: uppercase;*/
+    margin: .4em 0;
 }
 
 .site-statistics {
@@ -1681,7 +1684,7 @@ i.iconfont.hotpost {
     margin-left: 0;
 }
 
-.entry-content ol li , .entry-content ul li {
+.entry-content ol li, .entry-content ul li {
     padding: 8px 0;
 }
 
@@ -1695,27 +1698,27 @@ i.iconfont.hotpost {
     padding: 10px 0 10px 20px;
     border-left: 5px solid #C4E2EA;
     font-weight: normal;
-	border-radius: 3px;
+    border-radius: 3px;
 }
 
-.entry-content h4 , .entry-content h5 {
-	padding: 20px 35px;
+.entry-content h4, .entry-content h5 {
+    padding: 20px 35px;
     background: #FFF6B5;
     color: #737373;
     font-weight: normal;
     border-radius: 3px;
-	position:relative;
-	padding-left:60px;
-	box-shadow: 0 2px 3px rgba(0,0,0,.06);
+    position: relative;
+    padding-left: 60px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .06);
 }
 
 .entry-content h5 {
-	font-size: 16px;
+    font-size: 16px;
     background: #C8E6FB;
 }
 
-.entry-content h4:before , .entry-content h5:before{
-	font-family: 'iconfont';
+.entry-content h4:before, .entry-content h5:before {
+    font-family: 'iconfont';
     font-size: 25px;
     content: "\e60b";
     color: #C7BF83;
@@ -1726,14 +1729,14 @@ i.iconfont.hotpost {
 }
 
 .entry-content h5:before {
-	content: "\e605";
-	color: #7C9AAF;
+    content: "\e605";
+    color: #7C9AAF;
 }
 
 .entry-content code {
     background: #525252;
     color: #FFFFFF;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     padding: 4px 8px;
     border-radius: 2px;
 }
@@ -1773,7 +1776,7 @@ h1.entry-title {
     content: '...';
     display: inline-block;
     margin-left: .6em;
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, .8);
     position: relative;
     top: -30px;
     font-size: 28px;
@@ -1815,7 +1818,7 @@ h1.page-title {
     padding: 10px 15px;
     color: #828282;
     margin-bottom: 30px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 h1.page-title.mb- {
@@ -1855,16 +1858,10 @@ h1.page-title.mb- {
 */
 .cd-top:hover {
     opacity: 1;
-	-webkit-animation: btn-pudding 2s linear;
+    -webkit-animation: btn-pudding 2s linear;
     -o-animation: btn-pudding 2s linear;
     animation: btn-pudding 2s linear
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 860px) {
     .cd-top {
@@ -1900,7 +1897,7 @@ h1.page-title.mb- {
     font-size: 13px;
     color: #B3B3B3;
     text-transform: uppercase;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif
 }
 
 .post-tags a {
@@ -1996,7 +1993,7 @@ color: #FF4646;
     transition: opacity .1s ease-out
 }
 
-.post-share:hover .show-share , .post-share:hover .sharehidden {
+.post-share:hover .show-share, .post-share:hover .sharehidden {
     opacity: 1;
     display: inline-block;
 }
@@ -2045,7 +2042,7 @@ color: #FF4646;
 }
 
 .post-squares .category {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 10px;
     padding: 7px 15px;
     text-transform: uppercase;
@@ -2055,7 +2052,7 @@ color: #FF4646;
 }
 
 .post-squares h3 {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
@@ -2080,7 +2077,7 @@ color: #FF4646;
 }
 
 .post-squares .label {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 13px;
     display: block;
     text-transform: uppercase;
@@ -2250,7 +2247,7 @@ color: #FF4646;
 }
 
 .author-profile .meta h3 a {
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
@@ -2446,6 +2443,7 @@ h3#comments-list-title {
 span.edit-link {
     display: none;
 }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -2453,6 +2451,7 @@ span.edit-link {
 .archive .format-aside .entry-title {
     display: none;
 }
+
 /*--------------------------------------------------------------
 ## 清除浮动
 --------------------------------------------------------------*/
@@ -2465,31 +2464,34 @@ span.edit-link {
 ## works
 --------------------------------------------------------------*/
 .works-list {
-float:left;
-width:46%;
-margin:0 15.6px
+    float: left;
+    width: 46%;
+    margin: 0 15.6px
 }
+
 .works-entry {
-float: left;
-margin-bottom: 8px;
-display: inline-block;
+    float: left;
+    margin-bottom: 8px;
+    display: inline-block;
 }
+
 .works-main {
-width: 100%;
-position: relative;
-float: left;
-border: 2px solid #FBFBFB;
-overflow: hidden;
-margin-bottom: 30px;
-border-radius: 10px;
+    width: 100%;
+    position: relative;
+    float: left;
+    border: 2px solid #FBFBFB;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
+
 .works-feature {
-width:358px;
-height:220px;
+    width: 358px;
+    height: 220px;
 }
 
 .works-feature a {
-	background-position: center;
+    background-position: center;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -2498,26 +2500,27 @@ height:220px;
 }
 
 h1.works-title {
-font-size: 20px;
-font-weight: 400;
-margin: 20px 0 10px;
-padding: 0 20px;
-max-width: 340px;
-min-height: 30px;
-text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0 10px;
+    padding: 0 20px;
+    max-width: 340px;
+    min-height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
+
 .works-title a {
-color: #000000;
+    color: #000000;
 }
 
 .works-main p {
-margin: 10px 0;
-padding: 0 20px;
-font-size: 14px;
-color: #696969;
-min-height: 50px;
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #696969;
+    min-height: 50px;
 }
 
 .works-meta {
@@ -2526,61 +2529,65 @@ min-height: 50px;
 }
 
 .works-p-time {
-float: left;
-font-size: 13px;
-padding-left: 20px;
-color: #B7B7B7;
+    float: left;
+    font-size: 13px;
+    padding-left: 20px;
+    color: #B7B7B7;
 }
+
 .works-p-time i {
-font-size: 13px;
+    font-size: 13px;
 }
-.works-comnum a{
-color: #B7B7B7;
+
+.works-comnum a {
+    color: #B7B7B7;
 }
+
 .works-meta i {
-font-size:13px
+    font-size: 13px
 }
+
 .works-meta span {
-font-size:13px;
-float: right;
-margin-right: 20px;
-color: #B7B7B7;
+    font-size: 13px;
+    float: right;
+    margin-right: 20px;
+    color: #B7B7B7;
 }
 
 @media (max-width: 630px) {
-.works-list {
-width:100% !important ;
-margin:0 !important
-}
-.works-main {
-    height: auto !important;
-}
-.works-feature img {
-    width: 100%;
-    height: 220px !important;
-}
+    .works-list {
+        width: 100% !important;
+        margin: 0 !important
+    }
 
-.works-main p {
-	font-size:18px
-}
+    .works-main {
+        height: auto !important;
+    }
 
-h1.works-title {
-	font-size:23px
-}
+    .works-feature img {
+        width: 100%;
+        height: 220px !important;
+    }
 
-.works-feature {
-	width:100% !important
-}
-}
+    .works-main p {
+        font-size: 18px
+    }
 
+    h1.works-title {
+        font-size: 23px
+    }
 
+    .works-feature {
+        width: 100% !important
+    }
+}
 
 /*--------------------------------------------------------------
 ## archives
 --------------------------------------------------------------*/
 
 #archives-temp {
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -2692,7 +2699,7 @@ h1.cat-title {
 }
 
 header.page-header {
-/* margin: 0 auto; */
+    /* margin: 0 auto; */
     position: relative;
     text-align: center;
     margin-bottom: 50px;
@@ -2704,7 +2711,7 @@ header.page-header {
 --------------------------------------------------------------*/
 
 .links {
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     margin-bottom: 80px
 }
 
@@ -2714,7 +2721,7 @@ header.page-header {
     padding: 0;
     width: 100%;
     display: inline-block;
-	text-align:center;
+    text-align: center;
 }
 
 .links ul li {
@@ -2793,11 +2800,11 @@ span.sitename {
 
 span.linkss-title {
     font-size: 25px;
-/* margin: 0 auto; */
+    /* margin: 0 auto; */
     text-align: center;
     display: block;
     margin: 50px 0 30px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     letter-spacing: 5px;
 }
 
@@ -2821,7 +2828,7 @@ nav#comments-navi {
     margin: 0 auto;
     max-width: 860px;
     width: 100%;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     color: #9A9A9A;
 }
 
@@ -2831,8 +2838,9 @@ span.page-numbers.current {
 }
 
 #respond_box .author-updown {
-	font-family:miranafont,"Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
+
 .author-updown {
     margin-bottom: 5px;
 }
@@ -2852,17 +2860,19 @@ a.page-numbers {
 }
 
 .coments_words {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.comments .commentwrap {
-width: 69.076%;
-max-width: 860px;
-margin: 0 auto;
-padding: 0; }
 
-.loginwords{
-	margin-bottom: 5px;
+.comments .commentwrap {
+    width: 69.076%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.loginwords {
+    margin-bottom: 5px;
 }
 
 .comments .commentwrap hr {
@@ -2888,10 +2898,11 @@ padding: 0; }
 }
 
 .comments .comments-main {
-overflow: hidden;
--webkit-transition: height 0s ease-out;
--moz-transition: height 0s ease-out;
-transition: height 0s ease-out; }
+    overflow: hidden;
+    -webkit-transition: height 0s ease-out;
+    -moz-transition: height 0s ease-out;
+    transition: height 0s ease-out;
+}
 
 .comments ul.commentwrap {
     margin: 0 auto 30px;
@@ -2899,10 +2910,10 @@ transition: height 0s ease-out; }
 }
 
 .comnav {
-width: 69.076%;
-max-width: 860px;
-margin: 0 auto;
-font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    width: 69.076%;
+    max-width: 860px;
+    margin: 0 auto;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .comnav a {
@@ -2919,15 +2930,16 @@ font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans
 }
 
 .comments {
-clear: both;
-overflow: hidden;
-width: 100%;
-padding: 80px 0 80px;
-list-style: none;
-background: #fff; }
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    padding: 80px 0 80px;
+    list-style: none;
+    background: #fff;
+}
 
 .graybar {
-	display:none
+    display: none
 }
 
 .comment .contents {
@@ -2961,10 +2973,10 @@ background: #fff; }
 }
 
 .comment .body {
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
     line-height: 32px;
     color: #63686d;
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 
 .comment .body p {
@@ -3007,7 +3019,7 @@ background: #fff; }
 }
 
 .comment .profile img {
-	display: inline-block;
+    display: inline-block;
     width: 100%;
     max-width: 40px;
     height: 40px;
@@ -3036,7 +3048,6 @@ background: #fff; }
     padding: 0;
 }
 
-
 /*
 表情
 */
@@ -3046,35 +3057,34 @@ background: #fff; }
 }
 
 img.wp-smiley {
-    width: 24px!important;
-    height: auto!important;
+    width: 24px !important;
+    height: auto !important;
     max-height: none !important;
 }
 
 .smilies-box {
     float: right;
-	display:none;
-	margin-top: 6px;
+    display: none;
+    margin-top: 6px;
 }
 
 .smilies-box img {
-   width:22px
+    width: 22px
 }
 
 .com-footer {
     position: relative;
     display: inline-block;
     width: 100%;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 a.smli-button {
     float: right;
-	position: relative;
+    position: relative;
     margin-top: 5px;
-	cursor:pointer
+    cursor: pointer
 }
-
 
 /*.arrow-left {
 width: 0;
@@ -3087,7 +3097,7 @@ border-bottom: 20px solid #FFFFFF;
 }*/
 
 .comment .commeta {
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
     font-size: 16px;
     overflow: hidden;
     margin-bottom: 5px;
@@ -3096,15 +3106,15 @@ border-bottom: 20px solid #FFFFFF;
 }
 
 .comment .left {
-/*float: left; */
+    /*float: left; */
 }
 
 .comment .right {
-/*float: right; */
+    /*float: right; */
 }
 
 .comment .comment-reply-link {
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
     font-size: 12px;
     display: block;
     margin-left: 10px;
@@ -3141,7 +3151,7 @@ border-bottom: 20px solid #FFFFFF;
     font-size: 12px;
     letter-spacing: 0px;
     text-transform: none;
-    color: rgba(0,0,0,.35);
+    color: rgba(0, 0, 0, .35);
 }
 
 .comment .info .useragent-info img {
@@ -3158,7 +3168,7 @@ border-bottom: 20px solid #FFFFFF;
 }
 
 .comment h4 {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 24px;
     font-weight: 400;
     margin: 0;
@@ -3260,37 +3270,43 @@ border-bottom: 20px solid #FFFFFF;
 }
 
 .comment-respond textarea, .comment-respond input {
-font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
-font-size: 14px;
-float: left;
-width: 31.5%;
-margin: 0;
-padding: 16px 25px 15px;
-color: #535a63;
-border: 0;
-border-radius: 0px;
-background: #FFFFFF; }
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
+    font-size: 14px;
+    float: left;
+    width: 31.5%;
+    margin: 0;
+    padding: 16px 25px 15px;
+    color: #535a63;
+    border: 0;
+    border-radius: 0px;
+    background: #FFFFFF;
+}
 
 .comment-respond input {
-margin-bottom: 5px;
-border: 1px solid #DDE6EA;
-margin-right: 3%;
+    margin-bottom: 5px;
+    border: 1px solid #DDE6EA;
+    margin-right: 3%;
 }
 
 .comment-respond input:last-of-type {
- margin-right:0;
- width: 31%;}
+    margin-right: 0;
+    width: 31%;
+}
 
 @media (max-width: 625px) {
-.comment-respond input {
-width: 100%;
-margin-bottom: 5px; }
-.comment-respond input:last-of-type {
- width: 100%;} }
+    .comment-respond input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .comment-respond input:last-of-type {
+        width: 100%;
+    }
+}
 
 .comment-respond textarea {
     display: block;
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     float: none;
     width: 100%;
     height: 180px;
@@ -3314,26 +3330,26 @@ margin-bottom: 5px; }
 }
 
 .comment-respond input[type='submit'] {
-width: auto;
-margin: 0;
-padding: 15px 35px;
-text-transform: uppercase;
-color: #fff;
-background: #A0DAD0;
-border-right: 0;
--webkit-transition: background 0.15s ease-out;
--moz-transition: background 0.15s ease-out;
-transition: background 0.15s ease-out;
-box-shadow: none;
-border: 0;
-border-radius: 2px;
-text-shadow:none
+    width: auto;
+    margin: 0;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #A0DAD0;
+    border-right: 0;
+    -webkit-transition: background 0.15s ease-out;
+    -moz-transition: background 0.15s ease-out;
+    transition: background 0.15s ease-out;
+    box-shadow: none;
+    border: 0;
+    border-radius: 2px;
+    text-shadow: none
 }
 
 .comment-respond input[type='submit']:hover {
-background:#DDE6EA;
--webkit-animation: btn-pudding 1s linear;
-animation: btn-pudding 1s linear;
+    background: #DDE6EA;
+    -webkit-animation: btn-pudding 1s linear;
+    animation: btn-pudding 1s linear;
 }
 
 .comment-respond input:focus, .comment-respond textarea:focus, .comment-respond input:active, .comment-respond textarea:active {
@@ -3421,7 +3437,7 @@ animation: btn-pudding 1s linear;
     cursor: pointer;
     color: #555;
     font-size: 14px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .siren-checkbox-label input {
@@ -3437,7 +3453,7 @@ animation: btn-pudding 1s linear;
 
 .siren-checkbox-radioInput {
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 100%;
     display: inline-block;
     height: 18px;
@@ -3474,7 +3490,7 @@ animation: btn-pudding 1s linear;
 top-features
 */
 
-h1.fes-title , h1.main-title {
+h1.fes-title, h1.main-title {
     color: #666;
     font-size: 16px;
     font-weight: 400;
@@ -3493,7 +3509,7 @@ h1.fes-title , h1.main-title {
     width: 100%;
     height: auto;
     margin-top: 55px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .top-feature img {
@@ -3540,7 +3556,7 @@ li.feature-2 {
 .notice {
     padding: 20px;
     border: 1px dashed #E6E6E6;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     color: #969696;
     position: relative;
     display: inline-block;
@@ -3556,46 +3572,45 @@ li.feature-2 {
     padding-right: 10px;
 }
 
-
 .notice-content {
     display: initial;
     vertical-align: middle;
 }
+
 /*公告尾部添加闪烁效果
 */
-.notice-cursor{
-	opacity: 1;
-	-webkit-animation: i .7s infinite;
-	animation: i .7s infinite
-	}
-
+.notice-cursor {
+    opacity: 1;
+    -webkit-animation: i .7s infinite;
+    animation: i .7s infinite
+}
 
 @keyframes i {
-	0% {
-		opacity: 1
-	}
+    0% {
+        opacity: 1
+    }
 
-	50% {
-		opacity: 0
-	}
+    50% {
+        opacity: 0
+    }
 
-	to {
-		opacity: 1
-	}
+    to {
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes i {
-	0% {
-		opacity: 1
-	}
+    0% {
+        opacity: 1
+    }
 
-	50% {
-		opacity: 0
-	}
+    50% {
+        opacity: 0
+    }
 
-	to {
-		opacity: 1
-	}
+    to {
+        opacity: 1
+    }
 }
 
 @media (max-width: 860px) {
@@ -3650,7 +3665,7 @@ li.feature-2 {
     z-index: -1;
 }
 
-@media (max-width:860px) {
+@media (max-width: 860px) {
     #centerbg {
         background-attachment: scroll;
     }
@@ -3666,8 +3681,8 @@ li.feature-2 {
     padding: 0 10px;
     top: 49.3%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center;
     z-index: 99;
     -webkit-transition: .4s ease all;
@@ -3714,7 +3729,7 @@ li.feature-2 {
     background: rgba(0, 0, 0, 0.5);
     padding: 15px 25px;
     margin-top: 22px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     letter-spacing: 0;
     line-height: 30px;
     border-radius: 50px;
@@ -3730,7 +3745,7 @@ li.feature-2 {
     margin-left: 10px;
     list-style: none;
     display: inline-block;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .top-social img {
@@ -3766,8 +3781,8 @@ li.feature-2 {
     background: rgba(0, 0, 0, 0.4);
     top: 40px;
     left: -40px;
-    -webkit-transform: translate3d(0,50px,0);
-    transform: translate3d(0,50px,0);
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
     opacity: 0;
 }
 
@@ -3782,8 +3797,8 @@ li.feature-2 {
 }
 
 .wechat:hover .wechatInner {
-    -webkit-transform: translate3d(0,10px,0);
-    transform: translate3d(0,10px,0);
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
     opacity: 1;
     visibility: visible;
 }
@@ -3846,7 +3861,7 @@ i.iconfont.js-toggle-search.iconsearch {
     height: 285px;
     top: 0;
     bottom: 0;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .search-form--modal .search-form__inner p {
@@ -3916,7 +3931,7 @@ i.iconfont.js-toggle-search.iconsearch {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -3950,7 +3965,7 @@ i.iconfont.js-toggle-search.iconsearch {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .s-search i {
@@ -3995,7 +4010,6 @@ i.iconfont.js-toggle-search.iconsearch {
     border: 1px solid #ddd;
 }
 
-
 /*
 * 404
 */
@@ -4029,9 +4043,6 @@ i.iconfont.js-toggle-search.iconsearch {
     -o-box-shadow: 0 0 4px rgba(117, 247, 211, 0.85);
     box-shadow: 0 0 4px rgba(117, 247, 211, 0.85);
 }
-
-
-
 
 /*!
 * baguetteBox.js
@@ -4093,7 +4104,7 @@ i.iconfont.js-toggle-search.iconsearch {
     color: #eee;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.8);
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 #baguetteBox-overlay .full-image:before {
@@ -4275,7 +4286,7 @@ Borrowed from http://tobiasahlin.com/spinkit/
 
 @-webkit-keyframes bounce {
 
-    0%,100% {
+    0%, 100% {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
@@ -4288,7 +4299,7 @@ Borrowed from http://tobiasahlin.com/spinkit/
 
 @keyframes bounce {
 
-    0%,100% {
+    0%, 100% {
         -webkit-transform: scale(0);
         -moz-transform: scale(0);
         transform: scale(0);
@@ -4307,7 +4318,7 @@ Borrowed from http://tobiasahlin.com/spinkit/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer {
- /* Theme Footer (when set to scrolling) */
+    /* Theme Footer (when set to scrolling) */
     display: none;
 }
 
@@ -4446,99 +4457,100 @@ object {
 /*
  * Loading 加载动画
  */
-#loading{
-		background-color: #fff;
-		height: 100%;
-		width: 100%;
-		position: fixed;
-		z-index: 9999;
-		margin-top: 0px;
-		top: 0px;
-		display:none;
-	}
-	#loading-center-absolute {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 200px;
-		width: 200px;
-		margin-top: -100px;
-		margin-left: -100px;
-		-ms-transform: rotate(-135deg);
-	   	-webkit-transform: rotate(-135deg);
-	    transform: rotate(-135deg);
-	}
-	.loading-object{
+#loading {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 0px;
+    top: 0px;
+    display: none;
+}
 
-		-moz-border-radius: 50% 50% 50% 50%;
-		-webkit-border-radius: 50% 50% 50% 50%;
-		border-radius: 50% 50% 50% 50%;
-		position: absolute;
-		border-top: 5px solid #ffad33;
-		border-bottom: 5px solid transparent;
-		border-left:  5px solid #ffad33;
-		border-right: 5px solid transparent;
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
 
-		-webkit-animation: animate 2s infinite;
-		animation: animate 2s infinite;
+.loading-object {
 
-		}
-	#object_one{
-		left: 75px;
-		top: 75px;
-		width: 50px;
-		height: 50px;
-		}
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    border-top: 5px solid #ffad33;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #ffad33;
+    border-right: 5px solid transparent;
 
-	#object_two{
-		left: 65px;
-		top: 65px;
-		width: 70px;
-		height: 70px;
-		-webkit-animation-delay: 0.2s;
-	    animation-delay: 0.2s;
-		}
+    -webkit-animation: animate 2s infinite;
+    animation: animate 2s infinite;
 
-	#object_three{
-		left: 55px;
-		top: 55px;
-		width: 90px;
-		height: 90px;
-		-webkit-animation-delay: 0.4s;
-	    animation-delay: 0.4s;
-		}
-	#object_four{
-		left: 45px;
-		top: 45px;
-		width: 110px;
-		height: 110px;
-		-webkit-animation-delay: 0.6s;
-	    animation-delay: 0.6s;
+}
 
-		}
+#object_one {
+    left: 75px;
+    top: 75px;
+    width: 50px;
+    height: 50px;
+}
 
-	@-webkit-keyframes animate {
+#object_two {
+    left: 65px;
+    top: 65px;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
 
+#object_three {
+    left: 55px;
+    top: 55px;
+    width: 90px;
+    height: 90px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
 
-	50% {
+#object_four {
+    left: 45px;
+    top: 45px;
+    width: 110px;
+    height: 110px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 
-		-ms-transform: rotate(360deg) scale(0.8);
-	   	-webkit-transform: rotate(360deg) scale(0.8);
-	    transform: rotate(360deg) scale(0.8);
-	  }
-	}
+}
 
-	@keyframes animate {
+@-webkit-keyframes animate {
 
-	50% {
+    50% {
 
-		-ms-transform: rotate(360deg) scale(0.8);
-	   	-webkit-transform: rotate(360deg) scale(0.8);
-	    transform: rotate(360deg) scale(0.8);
-	  }
-	}
+        -ms-transform: rotate(360deg) scale(0.8);
+        -webkit-transform: rotate(360deg) scale(0.8);
+        transform: rotate(360deg) scale(0.8);
+    }
+}
 
+@keyframes animate {
 
+    50% {
+
+        -ms-transform: rotate(360deg) scale(0.8);
+        -webkit-transform: rotate(360deg) scale(0.8);
+        transform: rotate(360deg) scale(0.8);
+    }
+}
 
 /*
  * download
@@ -4546,7 +4558,7 @@ object {
  *
  */
 
-.download , .demo {
+.download, .demo {
     color: #fff !important;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -4559,11 +4571,11 @@ object {
     background: #72C5A6
 }
 
-.download:hover , .demo:hover {
+.download:hover, .demo:hover {
     color: #fff;
 }
 
-.download::before, .download::after , .demo::before, .demo::after {
+.download::before, .download::after, .demo::before, .demo::after {
     content: '';
     position: absolute;
     top: 0;
@@ -4576,32 +4588,32 @@ object {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 1;
-    -webkit-transform: translate(0,-105%);
-    transform: translate(0,-105%);
+    -webkit-transform: translate(0, -105%);
+    transform: translate(0, -105%);
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgba(255,255,255,1);
-    background-color: rgba(255,255,255,0.25);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
-.download::after , .demo::after {
+.download::after, .demo::after {
     -webkit-transition-delay: 0.2s;
- /* Safari */
+    /* Safari */
     transition-delay: 0.2s;
 }
 
-.download:hover::before, .download:hover::after , .demo:hover::before, .demo:hover::after {
+.download:hover::before, .download:hover::after, .demo:hover::before, .demo:hover::after {
     opacity: 0;
-    -webkit-transform: translate(0,0);
-    transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
-.download span , .demo span {
+.download span, .demo span {
     padding: 10px 30px;
     display: inline-block;
 }
 
-i.iconfont.down , i.iconfont.demo {
+i.iconfont.down, i.iconfont.demo {
     margin-right: 6px;
     font-size: 18px;
     position: relative;
@@ -4614,7 +4626,7 @@ i.iconfont.down , i.iconfont.demo {
     text-align: center;
     margin: 40px 0 80px;
     display: inline-block;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 #pagination a {
@@ -4656,7 +4668,6 @@ i.iconfont.down , i.iconfont.demo {
 *
 **/
 
-
 @media (max-width: 630px) {
     .links ul li {
         width: 100% !important;
@@ -4679,7 +4690,7 @@ i.iconfont.down , i.iconfont.demo {
         top: 160px !important
     }
 
-    .admin-login , .wesite-des {
+    .admin-login, .wesite-des {
         display: none
     }
 
@@ -4765,7 +4776,7 @@ i.iconfont.down , i.iconfont.demo {
         font-size: 14px
     }
 
-    .post-footer , .post-share , .post-like {
+    .post-footer, .post-share, .post-like {
         display: none
     }
 
@@ -4812,7 +4823,7 @@ i.iconfont.down , i.iconfont.demo {
     .site-title {
         font-size: 20px;
         margin-right: 10px;
-        font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+        font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     }
 
     .links ul li {
@@ -4854,7 +4865,7 @@ i.iconfont.down , i.iconfont.demo {
         display: none
     }
 
-    h3#comments-list-title , nav#comments-navi {
+    h3#comments-list-title, nav#comments-navi {
         width: 100%;
         padding: 0 6.39%;
         max-width: 1245px;
@@ -4889,7 +4900,7 @@ i.iconfont.down , i.iconfont.demo {
 
     .wrapper {
         transition-duration: 0.5s;
-/*transition-timing-function: linear;*/
+        /*transition-timing-function: linear;*/
         background-color: white;
         width: 100%;
         height: auto;
@@ -4902,7 +4913,7 @@ i.iconfont.down , i.iconfont.demo {
 
     .wrapper section {
         max-width: 600px;
-/*margin: 0 auto 60px auto;*/
+        /*margin: 0 auto 60px auto;*/
     }
 
     .wrapper section h1 {
@@ -4923,7 +4934,7 @@ i.iconfont.down , i.iconfont.demo {
 
     .openNav {
         transition-duration: 0.5s;
-/*transition-timing-function: swing;*/
+        /*transition-timing-function: swing;*/
         width: 100%;
         height: 50px;
         position: absolute;
@@ -4955,7 +4966,7 @@ i.iconfont.down , i.iconfont.demo {
     }
 
     .openNav .icon:before,
-.openNav .icon:after {
+    .openNav .icon:after {
         transition-duration: 0.5s;
         background-color: #333;
         position: absolute;
@@ -4978,7 +4989,7 @@ i.iconfont.down , i.iconfont.demo {
     }
 
     .openNav.open .icon:before,
-.openNav.open .icon:after {
+    .openNav.open .icon:after {
         top: 0;
     }
 
@@ -5004,7 +5015,7 @@ i.iconfont.down , i.iconfont.demo {
         display: block;
         overflow-x: hidden;
         overflow-y: auto;
-        font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+        font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     }
 
     #mo-nav .m-avatar {
@@ -5040,7 +5051,7 @@ i.iconfont.down , i.iconfont.demo {
         text-align: center;
         border-radius: 3px;
         outline: none;
-        font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+        font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     }
 
     #mo-nav ul {
@@ -5126,15 +5137,11 @@ i.iconfont.down , i.iconfont.demo {
     }
 }
 
-
 /*iconfont **/
 @font-face {
     font-family: "iconfont";
-  src: url('inc/fonts/iconfont.eot?t=1461591491'); /* IE9*/
-  src: url('inc/fonts/iconfont.eot?t=1461591491#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('inc/fonts/iconfont.woff?t=1461591491') format('woff'), /* chrome, firefox */
-  url('inc/fonts/iconfont.ttf?t=1461591491') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('inc/fonts/iconfont.svg?t=1461591491#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('inc/fonts/iconfont.eot?t=1461591491'); /* IE9*/
+    src: url('inc/fonts/iconfont.eot?t=1461591491#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('inc/fonts/iconfont.woff?t=1461591491') format('woff'), /* chrome, firefox */ url('inc/fonts/iconfont.ttf?t=1461591491') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('inc/fonts/iconfont.svg?t=1461591491#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -5366,7 +5373,6 @@ i.iconfont.down , i.iconfont.demo {
     content: "\e769";
 }
 
-
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
     width: 6px;
@@ -5487,124 +5493,124 @@ i.iconfont.down , i.iconfont.demo {
 
 /*颤抖动画*/
 @keyframes poi-face {
-    2%,24%,80% {
-        -webkit-transform: translate(0,1.5px) rotate(1.5deg);
-        transform: translate(0,1.5px) rotate(1.5deg)
+    2%, 24%, 80% {
+        -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+        transform: translate(0, 1.5px) rotate(1.5deg)
     }
 
-    4%,68%,98% {
-        -webkit-transform: translate(0,-1.5px) rotate(-.5deg);
-        transform: translate(0,-1.5px) rotate(-.5deg)
+    4%, 68%, 98% {
+        -webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+        transform: translate(0, -1.5px) rotate(-.5deg)
     }
 
-    38%,6% {
-        -webkit-transform: translate(0,1.5px) rotate(-1.5deg);
-        transform: translate(0,1.5px) rotate(-1.5deg)
+    38%, 6% {
+        -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+        transform: translate(0, 1.5px) rotate(-1.5deg)
     }
 
-    8%,86% {
-        -webkit-transform: translate(0,-1.5px) rotate(-1.5deg);
-        transform: translate(0,-1.5px) rotate(-1.5deg)
+    8%, 86% {
+        -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+        transform: translate(0, -1.5px) rotate(-1.5deg)
     }
 
-    10%,72% {
-        -webkit-transform: translate(0,2.5px) rotate(1.5deg);
-        transform: translate(0,2.5px) rotate(1.5deg)
+    10%, 72% {
+        -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+        transform: translate(0, 2.5px) rotate(1.5deg)
     }
 
-    12%,64%,78%,96% {
-        -webkit-transform: translate(0,-.5px) rotate(1.5deg);
-        transform: translate(0,-.5px) rotate(1.5deg)
+    12%, 64%, 78%, 96% {
+        -webkit-transform: translate(0, -.5px) rotate(1.5deg);
+        transform: translate(0, -.5px) rotate(1.5deg)
     }
 
-    14%,54% {
-        -webkit-transform: translate(0,-1.5px) rotate(1.5deg);
-        transform: translate(0,-1.5px) rotate(1.5deg)
+    14%, 54% {
+        -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+        transform: translate(0, -1.5px) rotate(1.5deg)
     }
 
     16% {
-        -webkit-transform: translate(0,-.5px) rotate(-1.5deg);
-        transform: translate(0,-.5px) rotate(-1.5deg)
+        -webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+        transform: translate(0, -.5px) rotate(-1.5deg)
     }
 
-    18%,22% {
-        -webkit-transform: translate(0,.5px) rotate(-1.5deg);
-        transform: translate(0,.5px) rotate(-1.5deg)
+    18%, 22% {
+        -webkit-transform: translate(0, .5px) rotate(-1.5deg);
+        transform: translate(0, .5px) rotate(-1.5deg)
     }
 
-    20%,36%,46% {
-        -webkit-transform: translate(0,-1.5px) rotate(2.5deg);
-        transform: translate(0,-1.5px) rotate(2.5deg)
+    20%, 36%, 46% {
+        -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+        transform: translate(0, -1.5px) rotate(2.5deg)
     }
 
-    26%,50% {
-        -webkit-transform: translate(0,.5px) rotate(.5deg);
-        transform: translate(0,.5px) rotate(.5deg)
+    26%, 50% {
+        -webkit-transform: translate(0, .5px) rotate(.5deg);
+        transform: translate(0, .5px) rotate(.5deg)
     }
 
     28% {
-        -webkit-transform: translate(0,.5px) rotate(1.5deg);
-        transform: translate(0,.5px) rotate(1.5deg)
+        -webkit-transform: translate(0, .5px) rotate(1.5deg);
+        transform: translate(0, .5px) rotate(1.5deg)
     }
 
-    30%,40%,62%,76%,88% {
-        -webkit-transform: translate(0,-.5px) rotate(2.5deg);
-        transform: translate(0,-.5px) rotate(2.5deg)
+    30%, 40%, 62%, 76%, 88% {
+        -webkit-transform: translate(0, -.5px) rotate(2.5deg);
+        transform: translate(0, -.5px) rotate(2.5deg)
     }
 
-    32%,34%,66% {
-        -webkit-transform: translate(0,1.5px) rotate(-.5deg);
-        transform: translate(0,1.5px) rotate(-.5deg)
+    32%, 34%, 66% {
+        -webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+        transform: translate(0, 1.5px) rotate(-.5deg)
     }
 
     42% {
-        -webkit-transform: translate(0,2.5px) rotate(-1.5deg);
-        transform: translate(0,2.5px) rotate(-1.5deg)
+        -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+        transform: translate(0, 2.5px) rotate(-1.5deg)
     }
 
-    44%,70% {
-        -webkit-transform: translate(0,1.5px) rotate(.5deg);
-        transform: translate(0,1.5px) rotate(.5deg)
+    44%, 70% {
+        -webkit-transform: translate(0, 1.5px) rotate(.5deg);
+        transform: translate(0, 1.5px) rotate(.5deg)
     }
 
-    48%,74%,82% {
-        -webkit-transform: translate(0,-.5px) rotate(.5deg);
-        transform: translate(0,-.5px) rotate(.5deg)
+    48%, 74%, 82% {
+        -webkit-transform: translate(0, -.5px) rotate(.5deg);
+        transform: translate(0, -.5px) rotate(.5deg)
     }
 
-    52%,56%,60% {
-        -webkit-transform: translate(0,2.5px) rotate(2.5deg);
-        transform: translate(0,2.5px) rotate(2.5deg)
+    52%, 56%, 60% {
+        -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+        transform: translate(0, 2.5px) rotate(2.5deg)
     }
 
     58% {
-        -webkit-transform: translate(0,.5px) rotate(2.5deg);
-        transform: translate(0,.5px) rotate(2.5deg)
+        -webkit-transform: translate(0, .5px) rotate(2.5deg);
+        transform: translate(0, .5px) rotate(2.5deg)
     }
 
     84% {
-        -webkit-transform: translate(0,1.5px) rotate(2.5deg);
-        transform: translate(0,1.5px) rotate(2.5deg)
+        -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+        transform: translate(0, 1.5px) rotate(2.5deg)
     }
 
     90% {
-        -webkit-transform: translate(0,2.5px) rotate(-.5deg);
-        transform: translate(0,2.5px) rotate(-.5deg)
+        -webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+        transform: translate(0, 2.5px) rotate(-.5deg)
     }
 
     92% {
-        -webkit-transform: translate(0,.5px) rotate(-.5deg);
-        transform: translate(0,.5px) rotate(-.5deg)
+        -webkit-transform: translate(0, .5px) rotate(-.5deg);
+        transform: translate(0, .5px) rotate(-.5deg)
     }
 
     94% {
-        -webkit-transform: translate(0,2.5px) rotate(.5deg);
-        transform: translate(0,2.5px) rotate(.5deg)
+        -webkit-transform: translate(0, 2.5px) rotate(.5deg);
+        transform: translate(0, 2.5px) rotate(.5deg)
     }
 
-    0%,100% {
-        -webkit-transform: translate(0,0) rotate(0);
-        transform: translate(0,0) rotate(0)
+    0%, 100% {
+        -webkit-transform: translate(0, 0) rotate(0);
+        transform: translate(0, 0) rotate(0)
     }
 }
 
@@ -5655,7 +5661,7 @@ i.iconfont.down , i.iconfont.demo {
     outline: none;
     border-radius: 3px;
     font-size: 16px;
-    font: 300 14px miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font: 300 14px miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     -webkit-transition: .4s ease all;
     -moz-transition: .4s ease all;
     -o-transition: .4s ease all;
@@ -5849,7 +5855,6 @@ i.iconfont.down , i.iconfont.demo {
     }
 }
 
-
 /*
  * 打赏
  */
@@ -5961,17 +5966,17 @@ i.iconfont.down , i.iconfont.demo {
 }
 
 @media (max-width: 860px) {
-   #banner_bolang_bg_1 {
-    width: auto;
-    height: 60px;
-    background: url("images/wave1.png") repeat-x;
-    _filter: alpha(opacity=80);
-    position: absolute;
-    bottom: 0px;
-    width: 400%;
-    left: -236px;
-    z-index: 997;
-   }
+    #banner_bolang_bg_1 {
+        width: auto;
+        height: 60px;
+        background: url("images/wave1.png") repeat-x;
+        _filter: alpha(opacity=80);
+        position: absolute;
+        bottom: 0px;
+        width: 400%;
+        left: -236px;
+        z-index: 997;
+    }
 }
 
 #banner_bolang_bg_2 {
@@ -5985,52 +5990,52 @@ i.iconfont.down , i.iconfont.demo {
     left: 0px;
     z-index: 996;
 }
+
 @media (max-width: 860px) {
-   #banner_bolang_bg_2 {
-    width: auto;
-    height: 70px;
-    background: url("images/wave2.png") repeat-x;
-    _filter: alpha(opacity=80);
-    position: absolute;
-    bottom: 0px;
-    width: 400%;
-    left: 0px;
-    z-index: 996;
-   }
+    #banner_bolang_bg_2 {
+        width: auto;
+        height: 70px;
+        background: url("images/wave2.png") repeat-x;
+        _filter: alpha(opacity=80);
+        position: absolute;
+        bottom: 0px;
+        width: 400%;
+        left: 0px;
+        z-index: 996;
+    }
 }
 
 /*
  * 气泡
  */
 .large-header {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
 }
 
-.bubble{
-	display: none;
-	position: absolute;
-	top: 0;
+.bubble {
+    display: none;
+    position: absolute;
+    top: 0;
     left: 0;
 }
 
 #readprogress {
-	background-color: rgba(36,191,53,1.00);
-	height: 3px;
-	width: 0px;
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	transition-duration:1s;
-	z-index: 999;
+    background-color: rgba(36, 191, 53, 1.00);
+    height: 3px;
+    width: 0px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition-duration: 1s;
+    z-index: 999;
 }
-
 
 /*
  * 颤抖的item
@@ -6061,202 +6066,503 @@ i.iconfont.down , i.iconfont.demo {
 }*/
 
 .tiaodan:hover {
-	-webkit-animation-name: tiaodan-slow;
-	-ms-animation-name: tiaodan-slow;
-	animation-name: tiaodan-slow;
-	-webkit-animation-duration: 5s;
-	-ms-animation-duration: 5s;
-	animation-duration: 5s;
-	-webkit-animation-iteration-count: infinite;
-	-ms-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-ms-animation-timing-function: ease-in-out;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-delay: 0s;
-	-ms-animation-delay: 0s;
-	animation-delay: 0s;
-	-webkit-animation-play-state: running;
-	-ms-animation-play-state: running;
-	animation-play-state: running text-align:center
+    -webkit-animation-name: tiaodan-slow;
+    -ms-animation-name: tiaodan-slow;
+    animation-name: tiaodan-slow;
+    -webkit-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running
+    text-align: center
 }
 
 @-webkit-keyframes tiaodan-slow {
-0%{-webkit-transform:translate(0,0) rotate(0)}
-2%{-webkit-transform:translate(-1px,3px) rotate(1.5deg)}
-4%{-webkit-transform:translate(2.3px,0) rotate(-.5deg)}
-6%{-webkit-transform:translate(3px,3px) rotate(-3.5deg)}
-8%{-webkit-transform:translate(-2.3px,-2px) rotate(-1.5deg)}
-10%{-webkit-transform:translate(3px,0) rotate(-2.5deg)}
-12%{-webkit-transform:translate(-2.3px,-2px) rotate(-3.5deg)}
-14%{-webkit-transform:translate(3px,2.3px) rotate(2.5deg)}
-16%{-webkit-transform:translate(3px,-3px) rotate(-1.5deg)}
-18%{-webkit-transform:translate(2.3px,-2.3px) rotate(-3.5deg)}
-20%{-webkit-transform:translate(2px,1px) rotate(-.5deg)}
-22%{-webkit-transform:translate(2.3px,3px) rotate(-2.5deg)}
-24%{-webkit-transform:translate(-3px,-1px) rotate(2.5deg)}
-26%{-webkit-transform:translate(2.3px,-2.3px) rotate(.5deg)}
-28%{-webkit-transform:translate(2.3px,-2.3px) rotate(-3.5deg)}
-30%{-webkit-transform:translate(-1.3px,-2.3px) rotate(-1.5deg)}
-32%{-webkit-transform:translate(-1px,0) rotate(2.5deg)}
-34%{-webkit-transform:translate(2.3px,1.3px) rotate(-.5deg)}
-36%{-webkit-transform:translate(1.3px,2.3px) rotate(1.5deg)}
-38%{-webkit-transform:translate(1.3px,-2.3px) rotate(1.5deg)}
-40%{-webkit-transform:translate(-3px,-1px) rotate(-.5deg)}
-42%{-webkit-transform:translate(-3px,1.3px) rotate(-.5deg)}
-44%{-webkit-transform:translate(-2.3px,2px) rotate(.5deg)}
-46%{-webkit-transform:translate(-2.3px,-1.3px) rotate(-.5deg)}
-48%{-webkit-transform:translate(1px,2.3px) rotate(1.5deg)}
-50%{-webkit-transform:translate(2.3px,2.3px) rotate(1.5deg)}
-52%{-webkit-transform:translate(-3px,2.3px) rotate(.5deg)}
-54%{-webkit-transform:translate(2.3px,-3px) rotate(-2.5deg)}
-56%{-webkit-transform:translate(1.3px,-2.3px) rotate(-2.5deg)}
-58%{-webkit-transform:translate(-1.3px,-2.3px) rotate(.5deg)}
-60%{-webkit-transform:translate(1.3px,2.3px) rotate(-.5deg)}
-62%{-webkit-transform:translate(0,0) rotate(-1.5deg)}
-64%{-webkit-transform:translate(-2.3px,-2.3px) rotate(-3.5deg)}
-66%{-webkit-transform:translate(2.3px,-2.3px) rotate(.5deg)}
-68%{-webkit-transform:translate(0,-2.3px) rotate(-2.5deg)}
-70%{-webkit-transform:translate(-2.3px,1px) rotate(1.5deg)}
-72%{-webkit-transform:translate(-2.3px,2.3px) rotate(2.5deg)}
-74%{-webkit-transform:translate(1.3px,-2.3px) rotate(-.5deg)}
-76%{-webkit-transform:translate(3px,1px) rotate(-.5deg)}
-78%{-webkit-transform:translate(-1px,3px) rotate(2.5deg)}
-80%{-webkit-transform:translate(2px,2.3px) rotate(2.5deg)}
-82%{-webkit-transform:translate(-2.3px,-2.3px) rotate(-.5deg)}
-84%{-webkit-transform:translate(-3px,3px) rotate(-2.5deg)}
-86%{-webkit-transform:translate(3px,2px) rotate(-2.5deg)}
-88%{-webkit-transform:translate(-3px,2px) rotate(-1.5deg)}
-90%{-webkit-transform:translate(-2.3px,-2.3px) rotate(-3.5deg)}
-92%{-webkit-transform:translate(-3px,2.3px) rotate(2.5deg)}
-94%{-webkit-transform:translate(-2.3px,-2.3px) rotate(-3.5deg)}
-96%{-webkit-transform:translate(-2px,1.3px) rotate(-3.5deg)}
-98%{-webkit-transform:translate(1.3px,1px) rotate(-.5deg)}
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0)
+    }
+    2% {
+        -webkit-transform: translate(-1px, 3px) rotate(1.5deg)
+    }
+    4% {
+        -webkit-transform: translate(2.3px, 0) rotate(-.5deg)
+    }
+    6% {
+        -webkit-transform: translate(3px, 3px) rotate(-3.5deg)
+    }
+    8% {
+        -webkit-transform: translate(-2.3px, -2px) rotate(-1.5deg)
+    }
+    10% {
+        -webkit-transform: translate(3px, 0) rotate(-2.5deg)
+    }
+    12% {
+        -webkit-transform: translate(-2.3px, -2px) rotate(-3.5deg)
+    }
+    14% {
+        -webkit-transform: translate(3px, 2.3px) rotate(2.5deg)
+    }
+    16% {
+        -webkit-transform: translate(3px, -3px) rotate(-1.5deg)
+    }
+    18% {
+        -webkit-transform: translate(2.3px, -2.3px) rotate(-3.5deg)
+    }
+    20% {
+        -webkit-transform: translate(2px, 1px) rotate(-.5deg)
+    }
+    22% {
+        -webkit-transform: translate(2.3px, 3px) rotate(-2.5deg)
+    }
+    24% {
+        -webkit-transform: translate(-3px, -1px) rotate(2.5deg)
+    }
+    26% {
+        -webkit-transform: translate(2.3px, -2.3px) rotate(.5deg)
+    }
+    28% {
+        -webkit-transform: translate(2.3px, -2.3px) rotate(-3.5deg)
+    }
+    30% {
+        -webkit-transform: translate(-1.3px, -2.3px) rotate(-1.5deg)
+    }
+    32% {
+        -webkit-transform: translate(-1px, 0) rotate(2.5deg)
+    }
+    34% {
+        -webkit-transform: translate(2.3px, 1.3px) rotate(-.5deg)
+    }
+    36% {
+        -webkit-transform: translate(1.3px, 2.3px) rotate(1.5deg)
+    }
+    38% {
+        -webkit-transform: translate(1.3px, -2.3px) rotate(1.5deg)
+    }
+    40% {
+        -webkit-transform: translate(-3px, -1px) rotate(-.5deg)
+    }
+    42% {
+        -webkit-transform: translate(-3px, 1.3px) rotate(-.5deg)
+    }
+    44% {
+        -webkit-transform: translate(-2.3px, 2px) rotate(.5deg)
+    }
+    46% {
+        -webkit-transform: translate(-2.3px, -1.3px) rotate(-.5deg)
+    }
+    48% {
+        -webkit-transform: translate(1px, 2.3px) rotate(1.5deg)
+    }
+    50% {
+        -webkit-transform: translate(2.3px, 2.3px) rotate(1.5deg)
+    }
+    52% {
+        -webkit-transform: translate(-3px, 2.3px) rotate(.5deg)
+    }
+    54% {
+        -webkit-transform: translate(2.3px, -3px) rotate(-2.5deg)
+    }
+    56% {
+        -webkit-transform: translate(1.3px, -2.3px) rotate(-2.5deg)
+    }
+    58% {
+        -webkit-transform: translate(-1.3px, -2.3px) rotate(.5deg)
+    }
+    60% {
+        -webkit-transform: translate(1.3px, 2.3px) rotate(-.5deg)
+    }
+    62% {
+        -webkit-transform: translate(0, 0) rotate(-1.5deg)
+    }
+    64% {
+        -webkit-transform: translate(-2.3px, -2.3px) rotate(-3.5deg)
+    }
+    66% {
+        -webkit-transform: translate(2.3px, -2.3px) rotate(.5deg)
+    }
+    68% {
+        -webkit-transform: translate(0, -2.3px) rotate(-2.5deg)
+    }
+    70% {
+        -webkit-transform: translate(-2.3px, 1px) rotate(1.5deg)
+    }
+    72% {
+        -webkit-transform: translate(-2.3px, 2.3px) rotate(2.5deg)
+    }
+    74% {
+        -webkit-transform: translate(1.3px, -2.3px) rotate(-.5deg)
+    }
+    76% {
+        -webkit-transform: translate(3px, 1px) rotate(-.5deg)
+    }
+    78% {
+        -webkit-transform: translate(-1px, 3px) rotate(2.5deg)
+    }
+    80% {
+        -webkit-transform: translate(2px, 2.3px) rotate(2.5deg)
+    }
+    82% {
+        -webkit-transform: translate(-2.3px, -2.3px) rotate(-.5deg)
+    }
+    84% {
+        -webkit-transform: translate(-3px, 3px) rotate(-2.5deg)
+    }
+    86% {
+        -webkit-transform: translate(3px, 2px) rotate(-2.5deg)
+    }
+    88% {
+        -webkit-transform: translate(-3px, 2px) rotate(-1.5deg)
+    }
+    90% {
+        -webkit-transform: translate(-2.3px, -2.3px) rotate(-3.5deg)
+    }
+    92% {
+        -webkit-transform: translate(-3px, 2.3px) rotate(2.5deg)
+    }
+    94% {
+        -webkit-transform: translate(-2.3px, -2.3px) rotate(-3.5deg)
+    }
+    96% {
+        -webkit-transform: translate(-2px, 1.3px) rotate(-3.5deg)
+    }
+    98% {
+        -webkit-transform: translate(1.3px, 1px) rotate(-.5deg)
+    }
 }
-@-ms-keyframes tiaodan-slow{
-0%{-ms-transform:translate(0,0) rotate(0)}
-2%{-ms-transform:translate(-2.3px,1px) rotate(-1.5deg)}
-4%{-ms-transform:translate(-2.3px,-1px) rotate(-3.5deg)}
-6%{-ms-transform:translate(2.3px,1.3px) rotate(-1.5deg)}
-8%{-ms-transform:translate(-2px,-2.3px) rotate(-1.5deg)}
-10%{-ms-transform:translate(-2.3px,-2px) rotate(-.5deg)}
-12%{-ms-transform:translate(-3px,2.3px) rotate(-2.5deg)}
-14%{-ms-transform:translate(2.3px,3px) rotate(-1.5deg)}
-16%{-ms-transform:translate(1.3px,1.3px) rotate(1.5deg)}
-18%{-ms-transform:translate(3px,-1.3px) rotate(-3.5deg)}
-20%{-ms-transform:translate(-2.3px,2px) rotate(-3.5deg)}
-22%{-ms-transform:translate(3px,-2.3px) rotate(-1.5deg)}
-24%{-ms-transform:translate(-1px,-2.3px) rotate(2.5deg)}
-26%{-ms-transform:translate(2.3px,2.3px) rotate(-.5deg)}
-28%{-ms-transform:translate(2.3px,-2.3px) rotate(-3.5deg)}
-30%{-ms-transform:translate(2.3px,-2.3px) rotate(-.5deg)}
-32%{-ms-transform:translate(2.3px,1.3px) rotate(1.5deg)}
-34%{-ms-transform:translate(2px,-2.3px) rotate(2.5deg)}
-36%{-ms-transform:translate(-2.3px,-2.3px) rotate(2.5deg)}
-38%{-ms-transform:translate(-3px,-2.3px) rotate(.5deg)}
-40%{-ms-transform:translate(2.3px,2.3px) rotate(-2.5deg)}
-42%{-ms-transform:translate(3px,-3px) rotate(.5deg)}
-44%{-ms-transform:translate(3px,3px) rotate(-3.5deg)}
-46%{-ms-transform:translate(-1.3px,2.3px) rotate(1.5deg)}
-48%{-ms-transform:translate(-2.3px,-3px) rotate(-2.5deg)}
-50%{-ms-transform:translate(3px,-1px) rotate(-3.5deg)}
-52%{-ms-transform:translate(-3px,-2.3px) rotate(2.5deg)}
-54%{-ms-transform:translate(2.3px,0) rotate(2.5deg)}
-56%{-ms-transform:translate(-3px,-1px) rotate(-.5deg)}
-58%{-ms-transform:translate(0,-2.3px) rotate(-3.5deg)}
-60%{-ms-transform:translate(-2.3px,1.3px) rotate(2.5deg)}
-62%{-ms-transform:translate(2.3px,3px) rotate(.5deg)}
-64%{-ms-transform:translate(-2.3px,-2.3px) rotate(-1.5deg)}
-66%{-ms-transform:translate(-1px,-2.3px) rotate(-.5deg)}
-68%{-ms-transform:translate(-2.3px,-2.3px) rotate(-2.5deg)}
-70%{-ms-transform:translate(-2.3px,-3px) rotate(-1.5deg)}
-72%{-ms-transform:translate(-1.3px,-2px) rotate(-2.5deg)}
-74%{-ms-transform:translate(-3px,1px) rotate(-.5deg)}
-76%{-ms-transform:translate(-2.3px,2.3px) rotate(2.5deg)}
-78%{-ms-transform:translate(2.3px,1.3px) rotate(-3.5deg)}
-80%{-ms-transform:translate(-2.3px,-2.3px) rotate(-.5deg)}
-82%{-ms-transform:translate(1.3px,-2.3px) rotate(1.5deg)}
-84%{-ms-transform:translate(2px,3px) rotate(1.5deg)}
-86%{-ms-transform:translate(3px,1.3px) rotate(2.5deg)}
-88%{-ms-transform:translate(-3px,-1px) rotate(-1.5deg)}
-90%{-ms-transform:translate(-1px,-2.3px) rotate(1.5deg)}
-92%{-ms-transform:translate(3px,-2.3px) rotate(-3.5deg)}
-94%{-ms-transform:translate(2.3px,-2.3px) rotate(-2.5deg)}
-96%{-ms-transform:translate(2.3px,-3px) rotate(2.5deg)}
-98%{-ms-transform:translate(3px,0) rotate(-3.5deg)}
+
+@-ms-keyframes tiaodan-slow {
+    0% {
+        -ms-transform: translate(0, 0) rotate(0)
+    }
+    2% {
+        -ms-transform: translate(-2.3px, 1px) rotate(-1.5deg)
+    }
+    4% {
+        -ms-transform: translate(-2.3px, -1px) rotate(-3.5deg)
+    }
+    6% {
+        -ms-transform: translate(2.3px, 1.3px) rotate(-1.5deg)
+    }
+    8% {
+        -ms-transform: translate(-2px, -2.3px) rotate(-1.5deg)
+    }
+    10% {
+        -ms-transform: translate(-2.3px, -2px) rotate(-.5deg)
+    }
+    12% {
+        -ms-transform: translate(-3px, 2.3px) rotate(-2.5deg)
+    }
+    14% {
+        -ms-transform: translate(2.3px, 3px) rotate(-1.5deg)
+    }
+    16% {
+        -ms-transform: translate(1.3px, 1.3px) rotate(1.5deg)
+    }
+    18% {
+        -ms-transform: translate(3px, -1.3px) rotate(-3.5deg)
+    }
+    20% {
+        -ms-transform: translate(-2.3px, 2px) rotate(-3.5deg)
+    }
+    22% {
+        -ms-transform: translate(3px, -2.3px) rotate(-1.5deg)
+    }
+    24% {
+        -ms-transform: translate(-1px, -2.3px) rotate(2.5deg)
+    }
+    26% {
+        -ms-transform: translate(2.3px, 2.3px) rotate(-.5deg)
+    }
+    28% {
+        -ms-transform: translate(2.3px, -2.3px) rotate(-3.5deg)
+    }
+    30% {
+        -ms-transform: translate(2.3px, -2.3px) rotate(-.5deg)
+    }
+    32% {
+        -ms-transform: translate(2.3px, 1.3px) rotate(1.5deg)
+    }
+    34% {
+        -ms-transform: translate(2px, -2.3px) rotate(2.5deg)
+    }
+    36% {
+        -ms-transform: translate(-2.3px, -2.3px) rotate(2.5deg)
+    }
+    38% {
+        -ms-transform: translate(-3px, -2.3px) rotate(.5deg)
+    }
+    40% {
+        -ms-transform: translate(2.3px, 2.3px) rotate(-2.5deg)
+    }
+    42% {
+        -ms-transform: translate(3px, -3px) rotate(.5deg)
+    }
+    44% {
+        -ms-transform: translate(3px, 3px) rotate(-3.5deg)
+    }
+    46% {
+        -ms-transform: translate(-1.3px, 2.3px) rotate(1.5deg)
+    }
+    48% {
+        -ms-transform: translate(-2.3px, -3px) rotate(-2.5deg)
+    }
+    50% {
+        -ms-transform: translate(3px, -1px) rotate(-3.5deg)
+    }
+    52% {
+        -ms-transform: translate(-3px, -2.3px) rotate(2.5deg)
+    }
+    54% {
+        -ms-transform: translate(2.3px, 0) rotate(2.5deg)
+    }
+    56% {
+        -ms-transform: translate(-3px, -1px) rotate(-.5deg)
+    }
+    58% {
+        -ms-transform: translate(0, -2.3px) rotate(-3.5deg)
+    }
+    60% {
+        -ms-transform: translate(-2.3px, 1.3px) rotate(2.5deg)
+    }
+    62% {
+        -ms-transform: translate(2.3px, 3px) rotate(.5deg)
+    }
+    64% {
+        -ms-transform: translate(-2.3px, -2.3px) rotate(-1.5deg)
+    }
+    66% {
+        -ms-transform: translate(-1px, -2.3px) rotate(-.5deg)
+    }
+    68% {
+        -ms-transform: translate(-2.3px, -2.3px) rotate(-2.5deg)
+    }
+    70% {
+        -ms-transform: translate(-2.3px, -3px) rotate(-1.5deg)
+    }
+    72% {
+        -ms-transform: translate(-1.3px, -2px) rotate(-2.5deg)
+    }
+    74% {
+        -ms-transform: translate(-3px, 1px) rotate(-.5deg)
+    }
+    76% {
+        -ms-transform: translate(-2.3px, 2.3px) rotate(2.5deg)
+    }
+    78% {
+        -ms-transform: translate(2.3px, 1.3px) rotate(-3.5deg)
+    }
+    80% {
+        -ms-transform: translate(-2.3px, -2.3px) rotate(-.5deg)
+    }
+    82% {
+        -ms-transform: translate(1.3px, -2.3px) rotate(1.5deg)
+    }
+    84% {
+        -ms-transform: translate(2px, 3px) rotate(1.5deg)
+    }
+    86% {
+        -ms-transform: translate(3px, 1.3px) rotate(2.5deg)
+    }
+    88% {
+        -ms-transform: translate(-3px, -1px) rotate(-1.5deg)
+    }
+    90% {
+        -ms-transform: translate(-1px, -2.3px) rotate(1.5deg)
+    }
+    92% {
+        -ms-transform: translate(3px, -2.3px) rotate(-3.5deg)
+    }
+    94% {
+        -ms-transform: translate(2.3px, -2.3px) rotate(-2.5deg)
+    }
+    96% {
+        -ms-transform: translate(2.3px, -3px) rotate(2.5deg)
+    }
+    98% {
+        -ms-transform: translate(3px, 0) rotate(-3.5deg)
+    }
 }
-@keyframes tiaodan-slow{
-0%{transform:translate(0,0) rotate(0)}
-2%{transform:translate(-2.3px,-3px) rotate(2.5deg)}
-4%{transform:translate(2px,-2.3px) rotate(-.5deg)}
-6%{transform:translate(2px,-3px) rotate(2.5deg)}
-8%{transform:translate(0,3px) rotate(.5deg)}
-10%{transform:translate(2px,1.3px) rotate(.5deg)}
-12%{transform:translate(3px,0) rotate(.5deg)}
-14%{transform:translate(2.3px,2.3px) rotate(-3.5deg)}
-16%{transform:translate(-2.3px,0) rotate(-.5deg)}
-18%{transform:translate(1px,2px) rotate(-1.5deg)}
-20%{transform:translate(-3px,-1px) rotate(-3.5deg)}
-22%{transform:translate(3px,2.3px) rotate(2.5deg)}
-24%{transform:translate(-2.3px,-2.3px) rotate(-2.5deg)}
-26%{transform:translate(0,2.3px) rotate(-1.5deg)}
-28%{transform:translate(-2.3px,2.3px) rotate(2.5deg)}
-30%{transform:translate(3px,-2.3px) rotate(-1.5deg)}
-32%{transform:translate(0,-3px) rotate(-.5deg)}
-34%{transform:translate(2.3px,2.3px) rotate(-.5deg)}
-36%{transform:translate(-2.3px,2.3px) rotate(.5deg)}
-38%{transform:translate(3px,-2.3px) rotate(-.5deg)}
-40%{transform:translate(3px,0) rotate(.5deg)}
-42%{transform:translate(0,-1.3px) rotate(1.5deg)}
-44%{transform:translate(3px,-1.3px) rotate(-.5deg)}
-46%{transform:translate(1px,-2.3px) rotate(-2.5deg)}
-48%{transform:translate(2.3px,-1px) rotate(2.5deg)}
-50%{transform:translate(-3px,-2.3px) rotate(2.5deg)}
-52%{transform:translate(2px,1.3px) rotate(-3.5deg)}
-54%{transform:translate(1px,-2.3px) rotate(-.5deg)}
-56%{transform:translate(-2px,-2.3px) rotate(-.5deg)}
-58%{transform:translate(-2.3px,-2.3px) rotate(2.5deg)}
-60%{transform:translate(3px,2.3px) rotate(-3.5deg)}
-62%{transform:translate(2.3px,-2.3px) rotate(-3.5deg)}
-64%{transform:translate(-3px,3px) rotate(-.5deg)}
-66%{transform:translate(1px,-2px) rotate(.5deg)}
-68%{transform:translate(-2.3px,2.3px) rotate(1.5deg)}
-70%{transform:translate(-3px,3px) rotate(-1.5deg)}
-72%{transform:translate(-2.3px,-1.3px) rotate(2.5deg)}
-74%{transform:translate(0,-2.3px) rotate(1.5deg)}
-76%{transform:translate(-1.3px,-3px) rotate(.5deg)}
-78%{transform:translate(-1.3px,2.3px) rotate(-3.5deg)}
-80%{transform:translate(2.3px,2.3px) rotate(-3.5deg)}
-82%{transform:translate(-1px,-2.3px) rotate(-1.5deg)}
-84%{transform:translate(2px,-2.3px) rotate(.5deg)}
-86%{transform:translate(2.3px,-3px) rotate(-1.5deg)}
-88%{transform:translate(2.3px,-2.3px) rotate(1.5deg)}
-90%{transform:translate(1px,-2.3px) rotate(2.5deg)}
-92%{transform:translate(-3px,-1px) rotate(-1.5deg)}
-94%{transform:translate(-2.3px,-1px) rotate(.5deg)}
-96%{transform:translate(-2.3px,2.3px) rotate(1.5deg)}
-98%{transform:translate(2.3px,2.3px) rotate(-.5deg)}
+
+@keyframes tiaodan-slow {
+    0% {
+        transform: translate(0, 0) rotate(0)
+    }
+    2% {
+        transform: translate(-2.3px, -3px) rotate(2.5deg)
+    }
+    4% {
+        transform: translate(2px, -2.3px) rotate(-.5deg)
+    }
+    6% {
+        transform: translate(2px, -3px) rotate(2.5deg)
+    }
+    8% {
+        transform: translate(0, 3px) rotate(.5deg)
+    }
+    10% {
+        transform: translate(2px, 1.3px) rotate(.5deg)
+    }
+    12% {
+        transform: translate(3px, 0) rotate(.5deg)
+    }
+    14% {
+        transform: translate(2.3px, 2.3px) rotate(-3.5deg)
+    }
+    16% {
+        transform: translate(-2.3px, 0) rotate(-.5deg)
+    }
+    18% {
+        transform: translate(1px, 2px) rotate(-1.5deg)
+    }
+    20% {
+        transform: translate(-3px, -1px) rotate(-3.5deg)
+    }
+    22% {
+        transform: translate(3px, 2.3px) rotate(2.5deg)
+    }
+    24% {
+        transform: translate(-2.3px, -2.3px) rotate(-2.5deg)
+    }
+    26% {
+        transform: translate(0, 2.3px) rotate(-1.5deg)
+    }
+    28% {
+        transform: translate(-2.3px, 2.3px) rotate(2.5deg)
+    }
+    30% {
+        transform: translate(3px, -2.3px) rotate(-1.5deg)
+    }
+    32% {
+        transform: translate(0, -3px) rotate(-.5deg)
+    }
+    34% {
+        transform: translate(2.3px, 2.3px) rotate(-.5deg)
+    }
+    36% {
+        transform: translate(-2.3px, 2.3px) rotate(.5deg)
+    }
+    38% {
+        transform: translate(3px, -2.3px) rotate(-.5deg)
+    }
+    40% {
+        transform: translate(3px, 0) rotate(.5deg)
+    }
+    42% {
+        transform: translate(0, -1.3px) rotate(1.5deg)
+    }
+    44% {
+        transform: translate(3px, -1.3px) rotate(-.5deg)
+    }
+    46% {
+        transform: translate(1px, -2.3px) rotate(-2.5deg)
+    }
+    48% {
+        transform: translate(2.3px, -1px) rotate(2.5deg)
+    }
+    50% {
+        transform: translate(-3px, -2.3px) rotate(2.5deg)
+    }
+    52% {
+        transform: translate(2px, 1.3px) rotate(-3.5deg)
+    }
+    54% {
+        transform: translate(1px, -2.3px) rotate(-.5deg)
+    }
+    56% {
+        transform: translate(-2px, -2.3px) rotate(-.5deg)
+    }
+    58% {
+        transform: translate(-2.3px, -2.3px) rotate(2.5deg)
+    }
+    60% {
+        transform: translate(3px, 2.3px) rotate(-3.5deg)
+    }
+    62% {
+        transform: translate(2.3px, -2.3px) rotate(-3.5deg)
+    }
+    64% {
+        transform: translate(-3px, 3px) rotate(-.5deg)
+    }
+    66% {
+        transform: translate(1px, -2px) rotate(.5deg)
+    }
+    68% {
+        transform: translate(-2.3px, 2.3px) rotate(1.5deg)
+    }
+    70% {
+        transform: translate(-3px, 3px) rotate(-1.5deg)
+    }
+    72% {
+        transform: translate(-2.3px, -1.3px) rotate(2.5deg)
+    }
+    74% {
+        transform: translate(0, -2.3px) rotate(1.5deg)
+    }
+    76% {
+        transform: translate(-1.3px, -3px) rotate(.5deg)
+    }
+    78% {
+        transform: translate(-1.3px, 2.3px) rotate(-3.5deg)
+    }
+    80% {
+        transform: translate(2.3px, 2.3px) rotate(-3.5deg)
+    }
+    82% {
+        transform: translate(-1px, -2.3px) rotate(-1.5deg)
+    }
+    84% {
+        transform: translate(2px, -2.3px) rotate(.5deg)
+    }
+    86% {
+        transform: translate(2.3px, -3px) rotate(-1.5deg)
+    }
+    88% {
+        transform: translate(2.3px, -2.3px) rotate(1.5deg)
+    }
+    90% {
+        transform: translate(1px, -2.3px) rotate(2.5deg)
+    }
+    92% {
+        transform: translate(-3px, -1px) rotate(-1.5deg)
+    }
+    94% {
+        transform: translate(-2.3px, -1px) rotate(.5deg)
+    }
+    96% {
+        transform: translate(-2.3px, 2.3px) rotate(1.5deg)
+    }
+    98% {
+        transform: translate(2.3px, 2.3px) rotate(-.5deg)
+    }
 }
 
 /*
 跳动的文字
 */
 .changeletter {
-	width:100%;
-	max-hight:60%;
-	float:left;
-	margin-bottom:15px;
-	background-color: #E7E7E7;
-	color:#A4A4A4;
-	}
-
+    width: 100%;
+    max-hight: 60%;
+    float: left;
+    margin-bottom: 15px;
+    background-color: #E7E7E7;
+    color: #A4A4A4;
+}
 
 .changeletter #changelt {
-	width:100%;
-	margin: 5px 0 5px 0;
+    width: 100%;
+    margin: 5px 0 5px 0;
 
-	}
-
+}
 
 /*
 加载进度条
@@ -6264,75 +6570,84 @@ i.iconfont.down , i.iconfont.demo {
 
 /* Make clicks pass-through */
 #nprogress {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 #nprogress .bar {
-  background:#29d;
+    background: #29d;
 
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
 
-  width: 100%;
-  height: 2px;
+    width: 100%;
+    height: 2px;
 }
 
 /* Fancy blur effect */
 #nprogress .peg {
-  display: block;
-  position: absolute;
-  right: 0px;
-  width: 100px;
-  height: 100%;
-  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
-  opacity: 1.0;
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    opacity: 1.0;
 
-  -webkit-transform: rotate(3deg) translate(0px, -4px);
-      -ms-transform: rotate(3deg) translate(0px, -4px);
-          transform: rotate(3deg) translate(0px, -4px);
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
 }
 
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
-  display: block;
-  position: fixed;
-  z-index: 9999;
-  top: 50px;
-  right: 300px;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 50px;
+    right: 300px;
 }
 
 #nprogress .spinner-icon {
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  border: solid 2px transparent;
-  border-top-color: #29d;
-  border-left-color: #29d;
-  border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
 
-  -webkit-animation: nprogress-spinner 400ms linear infinite;
-          animation: nprogress-spinner 400ms linear infinite;
+    -webkit-animation: nprogress-spinner 400ms linear infinite;
+    animation: nprogress-spinner 400ms linear infinite;
 }
 
 .nprogress-custom-parent {
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 }
 
 .nprogress-custom-parent #nprogress .spinner,
 .nprogress-custom-parent #nprogress .bar {
-  position: absolute;
+    position: absolute;
 }
 
 @-webkit-keyframes nprogress-spinner {
-  0%   { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
+
 @keyframes nprogress-spinner {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
