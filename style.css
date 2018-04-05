@@ -34,6 +34,12 @@ Tags: Siren-Expand（综合扩展版）,评论表情,新作品模板,后台配�
 ## Captions
 ## Galleries
 --------------------------------------------------------------*/
+
+::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
 #content {
     animation: main 1s;
 }
