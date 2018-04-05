@@ -137,10 +137,6 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
-::selection {
-    color: #fff;
-}
-
 article,
 aside,
 details,
@@ -353,7 +349,6 @@ select,
 textarea {
     color: #404040;
     font-family: sans-serif;
-    font-size: 16px;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -1693,52 +1688,33 @@ i.iconfont.hotpost {
 }
 
 .entry-content h3 {
-    color: #4A4A4A;
-    background: #F9F9F9;
-    padding: 10px 0 10px 20px;
-    border-left: 5px solid #C4E2EA;
-    font-weight: normal;
-    border-radius: 3px;
-}
-
-.entry-content h4, .entry-content h5 {
-    padding: 20px 35px;
-    background: #FFF6B5;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
     color: #737373;
-    font-weight: normal;
-    border-radius: 3px;
-    position: relative;
-    padding-left: 60px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .06);
 }
 
-.entry-content h5 {
-    font-size: 16px;
-    background: #C8E6FB;
-}
-
-.entry-content h4:before, .entry-content h5:before {
-    font-family: 'iconfont';
+.entry-content h3:before {
+    content: "[";
+    margin-right: 5px;
+    color: #FF6D6D;
     font-size: 25px;
-    content: "\e60b";
-    color: #C7BF83;
-    margin-right: 10px;
-    position: absolute;
-    left: 20px;
-    top: 16px;
 }
 
-.entry-content h5:before {
-    content: "\e605";
-    color: #7C9AAF;
+.entry-content h3:after {
+    content: "]";
+    margin-left: 5px;
+    color: #FF6D6D;
+    font-size: 25px;
 }
 
 .entry-content code {
-    background: #525252;
-    color: #FFFFFF;
-    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
-    padding: 4px 8px;
-    border-radius: 2px;
+    background: #eee;
+    color: #E67474;
+    word-break: break-word;
+    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    padding: 2px;
+/*border: 1px dashed #ddd;*/
+    text-shadow: none;
 }
 
 .entry-content a {
@@ -2644,7 +2620,6 @@ span.time {
 .ar-time {
     position: absolute;
     left: -18px;
-    top: px;
     margin-top: 3px;
 }
 
@@ -3957,7 +3932,7 @@ i.iconfont.js-toggle-search.iconsearch {
 
 .s-search input {
     font-size: 1rem;
-    background: #none;
+    background: none;
     padding: 12px 24px 12px 64px;
     width: 100%;
     outline: none;
@@ -6083,8 +6058,8 @@ i.iconfont.down, i.iconfont.demo {
     animation-delay: 0s;
     -webkit-animation-play-state: running;
     -ms-animation-play-state: running;
-    animation-play-state: running
-    text-align: center
+    animation-play-state: running;
+    text-align: center;
 }
 
 @-webkit-keyframes tiaodan-slow {

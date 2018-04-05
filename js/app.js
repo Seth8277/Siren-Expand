@@ -6,17 +6,17 @@
  */
 
 // baguetteBox Libs
-var baguetteBox = function () {
+var baguetteBox = function() {
     function t(t, n) {
-        H.transforms = f(), H.svg = g(), e(), j = document.querySelectorAll(t), [].forEach.call(j, function (t) {
+        H.transforms = f(), H.svg = g(), e(), j = document.querySelectorAll(t), [].forEach.call(j, function(t) {
             n && n.filter && (A = n.filter);
             var e = t.getElementsByTagName("a");
-            e = [].filter.call(e, function (t) {
+            e = [].filter.call(e, function(t) {
                 return A.test(t.href)
             });
             var o = D.length;
-            D.push(e), D[o].options = n, [].forEach.call(D[o], function (t, e) {
-                m(t, "click", function (t) {
+            D.push(e), D[o].options = n, [].forEach.call(D[o], function(t, e) {
+                m(t, "click", function(t) {
                     t.preventDefault ? t.preventDefault() : t.returnValue = !1, i(o), a(e)
                 })
             })
@@ -28,30 +28,30 @@ var baguetteBox = function () {
     }
 
     function n() {
-        m(b, "click", function (t) {
+        m(b, "click", function(t) {
             t.target && "IMG" !== t.target.nodeName && "FIGCAPTION" !== t.target.nodeName && r()
-        }), m(w, "click", function (t) {
+        }), m(w, "click", function(t) {
             t.stopPropagation ? t.stopPropagation() : t.cancelBubble = !0, c()
-        }), m(C, "click", function (t) {
+        }), m(C, "click", function(t) {
             t.stopPropagation ? t.stopPropagation() : t.cancelBubble = !0, u()
-        }), m(T, "click", function (t) {
+        }), m(T, "click", function(t) {
             t.stopPropagation ? t.stopPropagation() : t.cancelBubble = !0, r()
-        }), m(b, "touchstart", function (t) {
+        }), m(b, "touchstart", function(t) {
             N = t.changedTouches[0].pageX
-        }), m(b, "touchmove", function (t) {
+        }), m(b, "touchmove", function(t) {
             S || (t.preventDefault ? t.preventDefault() : t.returnValue = !1, touch = t.touches[0] || t.changedTouches[0], touch.pageX - N > 40 ? (S = !0, c()) : touch.pageX - N < -40 && (S = !0, u()))
-        }), m(b, "touchend", function () {
+        }), m(b, "touchend", function() {
             S = !1
-        }), m(document, "keydown", function (t) {
+        }), m(document, "keydown", function(t) {
             switch (t.keyCode) {
-                case 37:
-                    c();
-                    break;
-                case 39:
-                    u();
-                    break;
-                case 27:
-                    r()
+            case 37:
+                c();
+                break;
+            case 39:
+                u();
+                break;
+            case 27:
+                r()
             }
         })
     }
@@ -71,15 +71,15 @@ var baguetteBox = function () {
     }
 
     function a(t) {
-        "block" !== b.style.display && (L = t, s(L, function () {
+        "block" !== b.style.display && (L = t, s(L, function() {
             p(L), h(L)
-        }), d(), b.style.display = "block", setTimeout(function () {
+        }), d(), b.style.display = "block", setTimeout(function() {
             b.className = "visible", I.afterShow && I.afterShow()
         }, 50), I.onChange && I.onChange(L, X.length))
     }
 
     function r() {
-        "none" !== b.style.display && (b.className = "", setTimeout(function () {
+        "none" !== b.style.display && (b.className = "", setTimeout(function() {
             b.style.display = "none", I.afterHide && I.afterHide()
         }, 500))
     }
@@ -92,7 +92,7 @@ var baguetteBox = function () {
             var i = y("figure"),
                 o = y("img"),
                 a = y("figcaption");
-            n.appendChild(i), i.innerHTML = '<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>', o.onload = function () {
+            n.appendChild(i), i.innerHTML = '<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>', o.onload = function() {
                 var n = document.querySelector("#baguette-img-" + t + " .spinner");
                 i.removeChild(n), !I.async && e && e()
             }, o.setAttribute("src", imageSrc), i.appendChild(o), I.captions && imageCaption && (a.innerHTML = imageCaption, i.appendChild(a)), I.async && e && e()
@@ -104,7 +104,7 @@ var baguetteBox = function () {
         if (t.dataset) {
             var n = [];
             for (var i in t.dataset) "at-" !== i.substring(0, 3) || isNaN(i.substring(3)) || (n[i.replace("at-", "")] = t.dataset[i]);
-            keys = Object.keys(n).sort(function (t, e) {
+            keys = Object.keys(n).sort(function(t, e) {
                 return parseInt(t) < parseInt(e) ? -1 : 1
             });
             for (var o = window.innerWidth * window.devicePixelRatio, a = 0; a < keys.length - 1 && keys[a] < o;) a++;
@@ -115,21 +115,21 @@ var baguetteBox = function () {
 
     function u() {
         var t;
-        return L <= X.length - 2 ? (L++, d(), p(L), t = !0) : I.animation && (k.className = "bounce-from-right", setTimeout(function () {
-            k.className = ""
-        }, 400), t = !1), I.onChange && I.onChange(L, X.length), t
+        return L <= X.length - 2 ? (L++, d(), p(L), t = !0) : I.animation && (k.className = "bounce-from-right", setTimeout(function() {
+                k.className = ""
+            }, 400), t = !1), I.onChange && I.onChange(L, X.length), t
     }
 
     function c() {
         var t;
-        return L >= 1 ? (L--, d(), h(L), t = !0) : I.animation && (k.className = "bounce-from-left", setTimeout(function () {
-            k.className = ""
-        }, 400), t = !1), I.onChange && I.onChange(L, X.length), t
+        return L >= 1 ? (L--, d(), h(L), t = !0) : I.animation && (k.className = "bounce-from-left", setTimeout(function() {
+                k.className = ""
+            }, 400), t = !1), I.onChange && I.onChange(L, X.length), t
     }
 
     function d() {
         var t = 100 * -L + "%";
-        "fadeIn" === I.animation ? (k.style.opacity = 0, setTimeout(function () {
+        "fadeIn" === I.animation ? (k.style.opacity = 0, setTimeout(function() {
             H.transforms ? k.style.transform = k.style.webkitTransform = "translate3d(" + t + ",0,0)" : k.style.left = t, k.style.opacity = 1
         }, 400)) : H.transforms ? k.style.transform = k.style.webkitTransform = "translate3d(" + t + ",0,0)" : k.style.left = t
     }
@@ -145,13 +145,13 @@ var baguetteBox = function () {
     }
 
     function p(t) {
-        t - L >= I.preload || s(t + 1, function () {
+        t - L >= I.preload || s(t + 1, function() {
             p(t + 1)
         })
     }
 
     function h(t) {
-        L - t >= I.preload || s(t - 1, function () {
+        L - t >= I.preload || s(t - 1, function() {
             h(t - 1)
         })
     }
@@ -168,7 +168,12 @@ var baguetteBox = function () {
         return document.createElement(t)
     }
 
-    var b, k, w, C, T, N,
+    var b,
+        k,
+        w,
+        C,
+        T,
+        N,
         E = '<svg width="44" height="60"><polyline points="30 10 10 30 30 50" stroke="rgba(255,255,255,.8)" stroke-width="4"stroke-linecap="butt" fill="none" stroke-linejoin="round"/></svg>',
         x = '<svg width="44" height="60"><polyline points="14 10 34 30 14 50" stroke="rgba(255,255,255,.8)" stroke-width="4"stroke-linecap="butt" fill="none" stroke-linejoin="round"/></svg>',
         B = '<svg width="30" height="30"><g stroke="rgba(255,255,255,.8)" stroke-width="4"><line x1="5" y1="5" x2="25" y2="25"/><line x1="5" y1="25" x2="25" y2="5"/></g></svg>',
@@ -191,15 +196,15 @@ var baguetteBox = function () {
         j = [],
         D = [],
         X = [];
-    return [].forEach || (Array.prototype.forEach = function (t, e) {
-        for (var n = 0; n < this.length; n++) t.call(e, this[n], n, this)
-    }), [].filter || (Array.prototype.filter = function (t, e, n, i, o) {
-        for (n = this, i = [], o = 0; o < n.length; o++) t.call(e, n[o], o, n) && i.push(n[o]);
-        return i
-    }), {
-        run: t,
-        showNext: u,
-        showPrevious: c
+    return [].forEach || (Array.prototype.forEach = function(t, e) {
+            for (var n = 0; n < this.length; n++) t.call(e, this[n], n, this)
+        }), [].filter || (Array.prototype.filter = function(t, e, n, i, o) {
+            for (n = this, i = [], o = 0; o < n.length; o++) t.call(e, n[o], o, n) && i.push(n[o]);
+            return i
+        }), {
+            run: t,
+            showNext: u,
+            showPrevious: c
     }
 }();
 
@@ -208,15 +213,15 @@ var home = location.href,
     Siren = {
 
         // 移动端菜单
-        MN: function () {
-            $('.iconflat').on('click', function () {
+        MN: function() {
+            $('.iconflat').on('click', function() {
                 $('body').toggleClass('navOpen');
                 $('#main-container,#mo-nav,.openNav').toggleClass('open');
             });
         },
 
         // 移动端菜单自动隐藏
-        MNH: function () {
+        MNH: function() {
             if ($('body').hasClass('navOpen')) {
                 $('body').toggleClass('navOpen');
                 $('#main-container,#mo-nav,.openNav').toggleClass('open');
@@ -224,44 +229,54 @@ var home = location.href,
         },
 
         // 背景视频
-        splay: function () { // 播放
+        splay: function() { // 播放
             $('#video-btn').addClass('video-pause').removeClass('video-play').show();
-            $('.video-stu').css({"bottom": "-100px"});
-            $('.focusinfo').css({"top": "-999px"});
+            $('.video-stu').css({
+                "bottom": "-100px"
+            });
+            $('.focusinfo').css({
+                "top": "-999px"
+            });
             s.play();
         },
-        spause: function () { // 暂停
+        spause: function() { // 暂停
             $('#video-btn').addClass('video-play').removeClass('video-pause');
-            $('.focusinfo').css({"top": "49.3%"});
+            $('.focusinfo').css({
+                "top": "49.3%"
+            });
             s.pause();
         },
-        liveplay: function () { // 自动续播 - 播放
+        liveplay: function() { // 自动续播 - 播放
             if (s.oncanplay != undefined && $('.haslive').length > 0) { // 检查视频数据
                 if ($('.videolive').length > 0) { // 检查播放状态
                     Siren.splay();
                 }
             }
         },
-        livepause: function () {
+        livepause: function() {
             if (s.oncanplay != undefined && $('.haslive').length > 0) { // 检查视频数据
                 Siren.spause();
-                $('.video-stu').css({"bottom": "0px"}).html('已暂停 ...');
+                $('.video-stu').css({
+                    "bottom": "0px"
+                }).html('已暂停 ...');
             }
         },
-        addsource: function () {
-            $('.video-stu').html('正在载入视频 ...').css({"bottom": "0px"});
+        addsource: function() {
+            $('.video-stu').html('正在载入视频 ...').css({
+                "bottom": "0px"
+            });
             var t = Poi.movies.name.split(","), // 视频列表
                 _t = t[Math.floor(Math.random() * t.length)]; // 随机抽取视频
             $('#bgvideo').attr('src', Poi.movies.url + '/' + _t + '.mp4');
             $('#bgvideo').attr('video-name', _t);
         },
-        LV: function () {
+        LV: function() {
             var _btn = $('#video-btn');
-            _btn.on('click', function () {
+            _btn.on('click', function() {
                 if ($(this).hasClass('loadvideo')) {
                     $(this).addClass('video-pause').removeClass('loadvideo').hide();
                     Siren.addsource();
-                    s.oncanplay = function () { // 数据可用时
+                    s.oncanplay = function() { // 数据可用时
                         Siren.splay();
                         $('#video-add').show();
                         _btn.addClass('videolive');
@@ -271,34 +286,42 @@ var home = location.href,
                     if ($(this).hasClass('video-pause')) {
                         Siren.spause();
                         _btn.removeClass('videolive');
-                        $('.video-stu').css({"bottom": "0px"}).html('已暂停 ...');
+                        $('.video-stu').css({
+                            "bottom": "0px"
+                        }).html('已暂停 ...');
                     } else {
                         Siren.splay();
                         _btn.addClass('videolive'); // 用于判断切换页面时的状态
                     }
                 }
-                s.onended = function () { // 播放结束后
+                s.onended = function() { // 播放结束后
                     $('#bgvideo').attr('src', '');
                     $('#video-add').hide();
                     _btn.addClass('loadvideo').removeClass('video-pause');
                     _btn.removeClass('videolive');
                     _btn.removeClass('haslive');
-                    $('.focusinfo').css({"top": "49.3%"});
+                    $('.focusinfo').css({
+                        "top": "49.3%"
+                    });
                 }
             });
-            $('#video-add').on('click', function () {
+            $('#video-add').on('click', function() {
                 Siren.addsource();
             });
         },
 
         // 自适应窗口高度
-        AH: function () {
+        AH: function() {
             if (Poi.windowheight == 'auto') {
                 if ($('h1.main-title').length > 0) {
                     var _height = $(window).height();
-                    $('#centerbg').css({'height': _height});
-                    $('#bgvideo').css({'min-height': _height});
-                    $(window).resize(function () {
+                    $('#centerbg').css({
+                        'height': _height
+                    });
+                    $('#bgvideo').css({
+                        'min-height': _height
+                    });
+                    $(window).resize(function() {
                         Siren.AH();
                     });
                 }
@@ -308,16 +331,24 @@ var home = location.href,
         },
 
         // 进程
-        PE: function () {
+        PE: function() {
             if ($('.headertop').length > 0) {
                 if ($('h1.main-title').length > 0) {
-                    $('.blank').css({"padding-top": "0px"});
-                    $('.headertop').css({"height": "auto"}).show();
+                    $('.blank').css({
+                        "padding-top": "0px"
+                    });
+                    $('.headertop').css({
+                        "height": "auto"
+                    }).show();
                     // 当前位置为首页并且视频原处于播放状态
                     if (Poi.movies.live == 'open') Siren.liveplay();
                 } else {
-                    $('.blank').css({"padding-top": "80px"});
-                    $('.headertop').css({"height": "0px"}).hide();
+                    $('.blank').css({
+                        "padding-top": "80px"
+                    });
+                    $('.headertop').css({
+                        "height": "0px"
+                    }).hide();
                     // 其他页面暂停视频
                     Siren.livepause();
                 }
@@ -325,11 +356,11 @@ var home = location.href,
         },
 
         // 点击事件
-        CE: function () {
+        CE: function() {
             // 显示&隐藏评论
             $('.comments-hidden').show();
             $('.comments-main').hide();
-            $('.comments-hidden').click(function () {
+            $('.comments-hidden').click(function() {
                 $('.comments-main').slideDown(500);
                 $('.comments-hidden').hide();
             });
@@ -337,24 +368,24 @@ var home = location.href,
             // 归档页
             $('.archives').hide();
             $('.archives:first').show();
-            $('#archives-temp h3').click(function () {
+            $('#archives-temp h3').click(function() {
                 $(this).next().slideToggle('fast');
                 return false;
             });
 
             // 灯箱
             baguetteBox.run('.entry-content', {
-                captions: function (element) {
+                captions: function(element) {
                     return element.getElementsByTagName('img')[0].alt;
                 }
             });
 
             // 搜索框
-            $('.js-toggle-search').on('click', function () {
+            $('.js-toggle-search').on('click', function() {
                 $('.js-toggle-search').toggleClass('is-active');
                 $('.js-search').toggleClass('is-visible');
             });
-            $('.search_close').on('click', function () {
+            $('.search_close').on('click', function() {
                 if ($('.js-search').hasClass('is-visible')) {
                     $('.js-toggle-search').toggleClass('is-active');
                     $('.js-search').toggleClass('is-visible');
@@ -362,7 +393,7 @@ var home = location.href,
             });
 
             // 导航菜单
-            $('#show-nav').on('click', function () {
+            $('#show-nav').on('click', function() {
                 if ($('#show-nav').hasClass('showNav')) {
                     $('#show-nav').removeClass('showNav').addClass('hideNav');
                     $('.site-top .lower nav').addClass('navbar');
@@ -373,17 +404,17 @@ var home = location.href,
             });
 
             // 过渡动画
-            $("#loading").click(function () {
+            $("#loading").click(function() {
                 $("#loading").fadeOut(500);
             });
         },
 
         // 显示&隐藏导航栏
-        NH: function () {
+        NH: function() {
             var h1 = 0,
                 h2 = 50,
                 ss = $(document).scrollTop();
-            $(window).scroll(function () {
+            $(window).scroll(function() {
                 var s = $(document).scrollTop();
                 if (s == h1) {
                     $('.site-header').removeClass('yya');
@@ -404,14 +435,14 @@ var home = location.href,
         },
 
         // Ajax加载文章
-        XLS: function () {
+        XLS: function() {
             $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-            $('body').on('click', '#pagination a', function () {
+            $('body').on('click', '#pagination a', function() {
                 $(this).addClass("loading").text("");
                 $.ajax({
                     type: "POST",
                     url: $(this).attr("href") + "#main",
-                    success: function (data) {
+                    success: function(data) {
                         result = $(data).find("#main .post");
                         nextHref = $(data).find("#pagination a").attr("href");
                         // In the new content
@@ -430,22 +461,22 @@ var home = location.href,
         },
 
         // Ajax评论提交
-        XCS: function () {
+        XCS: function() {
             var __cancel = jQuery('#cancel-comment-reply-link'),
                 __cancel_text = __cancel.text(),
-                __list = 'commentwrap';//your comment wrapprer
-            jQuery(document).on("submit", "#commentform", function () {
+                __list = 'commentwrap'; //your comment wrapprer
+            jQuery(document).on("submit", "#commentform", function() {
                 jQuery.ajax({
                     url: Poi.ajaxurl,
                     data: jQuery(this).serialize() + "&action=ajax_comment",
                     type: jQuery(this).attr('method'),
                     beforeSend: addComment.createButterbar("机器人正在验证评论.."),
-                    error: function (request) {
+                    error: function(request) {
                         var t = addComment;
                         t.createButterbar(request.responseText);
                     },
-                    success: function (data) {
-                        jQuery('textarea').each(function () {
+                    success: function(data) {
+                        jQuery('textarea').each(function() {
                             this.value = ''
                         });
                         var t = addComment,
@@ -483,9 +514,10 @@ var home = location.href,
                 return false;
             });
             addComment = {
-                moveForm: function (commId, parentId, respondId) {
+                moveForm: function(commId, parentId, respondId) {
                     var t = this,
-                        div, comm = t.I(commId),
+                        div,
+                        comm = t.I(commId),
                         respond = t.I(respondId),
                         cancel = t.I('cancel-comment-reply-link'),
                         parent = t.I('comment_parent'),
@@ -504,7 +536,7 @@ var home = location.href,
                     }, 400);
                     parent.value = parentId;
                     cancel.style.display = '';
-                    cancel.onclick = function () {
+                    cancel.onclick = function() {
                         var t = addComment,
                             temp = t.I('wp-temp-form-div'),
                             respond = t.I(t.respondId);
@@ -519,19 +551,18 @@ var home = location.href,
                     };
                     try {
                         t.I('comment').focus();
-                    } catch (e) {
-                    }
+                    } catch ( e ) {}
                     return false;
                 },
-                I: function (e) {
+                I: function(e) {
                     return document.getElementById(e);
                 },
-                clearButterbar: function (e) {
+                clearButterbar: function(e) {
                     if (jQuery(".butterBar").length > 0) {
                         jQuery(".butterBar").remove();
                     }
                 },
-                createButterbar: function (message) {
+                createButterbar: function(message) {
                     var t = this;
                     t.clearButterbar();
                     jQuery("body").append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>');
@@ -541,21 +572,23 @@ var home = location.href,
         },
 
         // Ajax评论分页
-        XCP: function () {
+        XCP: function() {
             $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-            $('body').on('click', '#comments-navi a', function (e) {
+            $('body').on('click', '#comments-navi a', function(e) {
                 e.preventDefault();
                 $.ajax({
                     type: "GET",
                     url: $(this).attr('href'),
-                    beforeSend: function () {
+                    beforeSend: function() {
                         $('#comments-navi').remove();
                         $('ul.commentwrap').remove();
                         $('#loading-comments').slideDown();
-                        $body.animate({scrollTop: $('#comments-list-title').offset().top - 65}, 800);
+                        $body.animate({
+                            scrollTop: $('#comments-list-title').offset().top - 65
+                        }, 800);
                     },
                     dataType: "html",
-                    success: function (out) {
+                    success: function(out) {
                         result = $(out).find('ul.commentwrap');
                         nextlink = $(out).find('#comments-navi');
                         $('#loading-comments').slideUp('fast');
@@ -567,119 +600,118 @@ var home = location.href,
         },
 
         // 输入框特效
-        IA: function () {
+        IA: function() {
             POWERMODE.colorful = true; // make power mode colorful
             POWERMODE.shake = false; // turn off shake
             document.body.addEventListener('input', POWERMODE)
         },
 
         // 返回顶部
-        GT: function () {
+        GT: function() {
             var offset = 100,
                 offset_opacity = 1200,
                 scroll_top_duration = 700,
                 $back_to_top = $('.cd-top');
-            $(window).scroll(function () {
-                ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            $(window).scroll(function() {
+                ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
                 if ($(this).scrollTop() > offset_opacity) {
                     $back_to_top.addClass('cd-fade-out');
                 }
             });
             //smooth scroll to top
-            $back_to_top.on('click', function (event) {
+            $back_to_top.on('click', function(event) {
                 event.preventDefault();
                 $('body,html').animate({
-                        scrollTop: 0,
-                    }, scroll_top_duration
+                    scrollTop: 0,
+                }, scroll_top_duration
                 );
             });
         }
 
-    }
+}
 
 // Executive function
-$(function () {
+$(function() {
 
-    Siren.AH(); // 自适应窗口高度
-    Siren.PE(); // 进程
-    Siren.NH(); // 显示&隐藏导航栏
-    Siren.GT(); // 返回顶部
-    Siren.XLS(); // Ajax文章列表
-    Siren.XCS(); // Ajax评论提交
-    Siren.XCP(); // Ajax评论分页
-    Siren.CE(); // 点击事件
-    Siren.MN(); // 移动端菜单
-    Siren.IA(); // 输入框特效
-    Siren.LV(); // 加载视频
+Siren.AH(); // 自适应窗口高度
+Siren.PE(); // 进程
+Siren.NH(); // 显示&隐藏导航栏
+Siren.GT(); // 返回顶部
+Siren.XLS(); // Ajax文章列表
+Siren.XCS(); // Ajax评论提交
+Siren.XCP(); // Ajax评论分页
+Siren.CE(); // 点击事件
+Siren.MN(); // 移动端菜单
+Siren.IA(); // 输入框特效
+Siren.LV(); // 加载视频
 
-    if (Poi.pjax) {
-        $(document).pjax('a[target!=_top]', '#page', {
+if (Poi.pjax) {
+    $(document).pjax('a[target!=_top]', '#page', {
+        fragment: '#page',
+        timeout: 8000,
+    }).on('pjax:send', function() {
+        $('#loading').fadeIn(300);
+        Siren.MNH();
+    }).on('pjax:complete', function() {
+        Siren.AH();
+        Siren.PE();
+        Siren.CE();
+        $("#loading").fadeOut(500);
+        if (Poi.codelamp == 'open') {
+            self.Prism.highlightAll(event)
+        }
+        ; // 解决Prism.js代码高亮
+        if ($('.ds-thread').length > 0) { // 解决多说问题
+            if (typeof DUOSHUO !== 'undefined') {
+                DUOSHUO.EmbedThread('.ds-thread');
+            } else {
+                $.getScript("//static.duoshuo.com/embed.js");
+            }
+        }
+    }).on('submit', '.search-form,.s-search', function(event) {
+        event.preventDefault();
+        $.pjax.submit(event, '#page', {
             fragment: '#page',
             timeout: 8000,
-        }).on('pjax:send', function () {
-            $('#loading').fadeIn(300);
-            Siren.MNH();
-        }).on('pjax:complete', function () {
-            Siren.AH();
-            Siren.PE();
-            Siren.CE();
-            $("#loading").fadeOut(500);
-            if (Poi.codelamp == 'open') {
-                self.Prism.highlightAll(event)
-            }
-            ; // 解决Prism.js代码高亮
-            if ($('.ds-thread').length > 0) {  // 解决多说问题
-                if (typeof DUOSHUO !== 'undefined') {
-                    DUOSHUO.EmbedThread('.ds-thread');
-                } else {
-                    $.getScript("//static.duoshuo.com/embed.js");
-                }
-            }
-        }).on('submit', '.search-form,.s-search', function (event) {
-            event.preventDefault();
-            $.pjax.submit(event, '#page', {
-                fragment: '#page',
-                timeout: 8000,
-            });
-            if ($('.js-search.is-visible').length > 0) {
-                $('.js-toggle-search').toggleClass('is-active');
-                $('.js-search').toggleClass('is-visible');
-            }
         });
-        window.addEventListener('popstate', function (e) {
-            Siren.AH();
-            Siren.PE();
-            Siren.CE();
-        }, false);
-    }
-
-    // 点赞
-    $.fn.postLike = function () {
-        if ($(this).hasClass('done')) {
-            return false;
-        } else {
-            $(this).addClass('done');
-            var id = $(this).data("id"),
-                action = $(this).data('action'),
-                rateHolder = $(this).children('.count');
-            var ajax_data = {
-                action: "specs_zan",
-                um_id: id,
-                um_action: action
-            };
-            $.post(Poi.ajaxurl, ajax_data,
-                function (data) {
-                    $(rateHolder).html(data);
-                });
-            return false;
+        if ($('.js-search.is-visible').length > 0) {
+            $('.js-toggle-search').toggleClass('is-active');
+            $('.js-search').toggleClass('is-visible');
         }
-    };
-    $(document).on("click", ".specsZan", function () {
-        $(this).postLike();
     });
+    window.addEventListener('popstate', function(e) {
+        Siren.AH();
+        Siren.PE();
+        Siren.CE();
+    }, false);
+}
+
+// 点赞
+$.fn.postLike = function() {
+    if ($(this).hasClass('done')) {
+        return false;
+    } else {
+        $(this).addClass('done');
+        var id = $(this).data("id"),
+            action = $(this).data('action'),
+            rateHolder = $(this).children('.count');
+        var ajax_data = {
+            action: "specs_zan",
+            um_id: id,
+            um_action: action
+        };
+        $.post(Poi.ajaxurl, ajax_data, function(data) {
+            $(rateHolder).html(data);
+        });
+        return false;
+    }
+};
+$(document).on("click", ".specsZan", function() {
+    $(this).postLike();
+});
 
 
-    console.log("%c Github %c", "background:#9a9da2; color:#ffffff; border-radius:4px;", "", "https://github.com/skillcat921");
+console.log("%c Github %c", "background:#9a9da2; color:#ffffff; border-radius:4px;", "", "https://github.com/Seth8277/Siren-Expand");
 
 });
 
@@ -692,19 +724,19 @@ var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
     isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
     isIe = navigator.userAgent.toLowerCase().indexOf('msie') > -1;
 
-if (( isWebkit || isOpera || isIe ) && document.getElementById && window.addEventListener) {
-    window.addEventListener('hashchange', function () {
+if ((isWebkit || isOpera || isIe) && document.getElementById && window.addEventListener) {
+    window.addEventListener('hashchange', function() {
         var id = location.hash.substring(1),
             element;
 
-        if (!( /^[A-z0-9_-]+$/.test(id) )) {
+        if (!( /^[A-z0-9_-]+$/.test(id))) {
             return;
         }
 
         element = document.getElementById(id);
 
         if (element) {
-            if (!( /^(?:a|select|input|button|textarea)$/i.test(element.tagName) )) {
+            if (!( /^(?:a|select|input|button|textarea)$/i.test(element.tagName))) {
                 element.tabIndex = -1;
             }
 
@@ -715,13 +747,13 @@ if (( isWebkit || isOpera || isIe ) && document.getElementById && window.addEven
 ;
 
 
-//表情js	
-$(".smli-button").click(function () {
+//表情js
+$(".smli-button").click(function() {
     $(".smilies-box").fadeToggle("slow");
 });
 
 
-//表情 
+//表情
 function grin(tag) {
     var myField;
     tag = ' ' + tag + ' ';
@@ -735,37 +767,36 @@ function grin(tag) {
         sel = document.selection.createRange();
         sel.text = tag;
         myField.focus();
-    }
-    else if (myField.selectionStart || myField.selectionStart == '0') {
+    } else if (myField.selectionStart || myField.selectionStart == '0') {
         var startPos = myField.selectionStart;
         var endPos = myField.selectionEnd;
         var cursorPos = endPos;
         myField.value = myField.value.substring(0, startPos)
-            + tag
-            + myField.value.substring(endPos, myField.value.length);
+        + tag
+        + myField.value.substring(endPos, myField.value.length);
         cursorPos += tag.length;
         myField.focus();
         myField.selectionStart = cursorPos;
         myField.selectionEnd = cursorPos;
-    }
-    else {
+    } else {
         myField.value += tag;
         myField.focus();
     }
-};
+}
+;
 
 
 //显示底部页面加载时间js
-window.onload = function () {
-    var TimeShow = document.getElementById("TimeShow");
-    if (TimeShow != undefined) {
-        TimeShow.innerHTML = "页面加载生成所用时间 ：" + (new Date().getTime() - t1) + " 毫秒";
-    } else {
-        return false;
-    }
+window.onload = function() {
+var TimeShow = document.getElementById("TimeShow");
+if (TimeShow != undefined) {
+    TimeShow.innerHTML = "页面加载生成所用时间 ：" + (new Date().getTime() - t1) + " 毫秒";
+} else {
+    return false;
+}
 };
 
 //复制文章内容弹出友好提示框
-document.body.oncopy = function () {
-    alert("复制成功！若要转载请务必保留原文链接，申明来源，谢谢合作！");
+document.body.oncopy = function() {
+alert("复制成功！若要转载请务必保留原文链接，申明来源，谢谢合作！");
 }
